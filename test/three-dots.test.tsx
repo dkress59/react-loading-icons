@@ -1,14 +1,12 @@
-import { mount, shallow } from 'enzyme'
+import { render } from '@testing-library/react'
 import React from 'react'
 
 import ThreeDots from '../src/components/three-dots'
 
-describe('Test <ThreeDots />', () => {
-	it('renders without crashing', () => {
-		shallow(<ThreeDots />)
-	})
-	it('viewBox property is defined', () => {
-		const ThreeDotsComponent = mount(<ThreeDots />).find('svg')
-		expect(ThreeDotsComponent.prop('viewBox')).toBeDefined()
+describe('<ThreeDots /> component', () => {
+	it('renders and matches snapshot', () => {
+		const { container } = render(<ThreeDots />)
+		expect(container).not.toBeNull()
+		expect(container).toMatchSnapshot()
 	})
 })

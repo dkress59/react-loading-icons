@@ -1,14 +1,12 @@
-import { mount, shallow } from 'enzyme'
+import { render } from '@testing-library/react'
 import React from 'react'
 
 import BallTriangle from '../src/components/ball-triangle'
 
-describe('Test <BallTriangle />', () => {
-	it('renders without crashing', () => {
-		shallow(<BallTriangle />)
-	})
-	it('viewBox property is defined', () => {
-		const BallTriangleComponent = mount(<BallTriangle />).find('svg')
-		expect(BallTriangleComponent.prop('viewBox')).toBeDefined()
+describe('<BallTriangle /> component', () => {
+	it('renders and matches snapshot', () => {
+		const { container } = render(<BallTriangle />)
+		expect(container).not.toBeNull()
+		expect(container).toMatchSnapshot()
 	})
 })

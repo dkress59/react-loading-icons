@@ -1,14 +1,12 @@
-import { mount, shallow } from 'enzyme'
+import { render } from '@testing-library/react'
 import React from 'react'
 
 import Grid from '../src/components/grid'
 
-describe('Test <Grid />', () => {
-	it('renders without crashing', () => {
-		shallow(<Grid />)
-	})
-	it('viewBox property is defined', () => {
-		const GridComponent = mount(<Grid />).find('svg')
-		expect(GridComponent.prop('viewBox')).toBeDefined()
+describe('<Grid /> component', () => {
+	it('renders and matches snapshot', () => {
+		const { container } = render(<Grid />)
+		expect(container).not.toBeNull()
+		expect(container).toMatchSnapshot()
 	})
 })

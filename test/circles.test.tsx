@@ -1,14 +1,12 @@
-import { mount, shallow } from 'enzyme'
+import { render } from '@testing-library/react'
 import React from 'react'
 
 import Circles from '../src/components/circles'
 
-describe('Test <Circles />', () => {
-	it('renders without crashing', () => {
-		shallow(<Circles />)
-	})
-	it('viewBox property is defined', () => {
-		const CirclesComponent = mount(<Circles />).find('svg')
-		expect(CirclesComponent.prop('viewBox')).toBeDefined()
+describe('<Circles /> component', () => {
+	it('renders and matches snapshot', () => {
+		const { container } = render(<Circles />)
+		expect(container).not.toBeNull()
+		expect(container).toMatchSnapshot()
 	})
 })

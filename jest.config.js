@@ -10,6 +10,5 @@ module.exports = {
 		},
 	},
 	cacheDirectory: '.jest/cache',
-	setupFiles: ['./test/setupTests.ts'],
 	testRegex: '(/test/*|(\\.|/)(test|spec))\\.tsx?$',
 }

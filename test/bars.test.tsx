@@ -1,14 +1,12 @@
-import { mount, shallow } from 'enzyme'
+import { render } from '@testing-library/react'
 import React from 'react'
 
 import Bars from '../src/components/bars'
 
-describe('Test <Bars />', () => {
-	it('renders without crashing', () => {
-		shallow(<Bars />)
-	})
-	it('viewBox property is defined', () => {
-		const BarsComponent = mount(<Bars />).find('svg')
-		expect(BarsComponent.prop('viewBox')).toBeDefined()
+describe('<Bars /> component', () => {
+	it('renders and matches snapshot', () => {
+		const { container } = render(<Bars />)
+		expect(container).not.toBeNull()
+		expect(container).toMatchSnapshot()
 	})
 })

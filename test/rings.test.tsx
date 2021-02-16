@@ -1,14 +1,12 @@
-import { mount, shallow } from 'enzyme'
+import { render } from '@testing-library/react'
 import React from 'react'
 
 import Rings from '../src/components/rings'
 
-describe('Test <Rings />', () => {
-	it('renders without crashing', () => {
-		shallow(<Rings />)
-	})
-	it('viewBox property is defined', () => {
-		const RingsComponent = mount(<Rings />).find('svg')
-		expect(RingsComponent.prop('viewBox')).toBeDefined()
+describe('<Rings /> component', () => {
+	it('renders and matches snapshot', () => {
+		const { container } = render(<Rings />)
+		expect(container).not.toBeNull()
+		expect(container).toMatchSnapshot()
 	})
 })
