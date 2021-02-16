@@ -1,0 +1,4 @@
+.DS_Store
+.jest/cache*
+dist*
+node_modules*
