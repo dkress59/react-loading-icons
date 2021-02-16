@@ -12,5 +12,5 @@
 		"strict": true,
 		"target": "es5"
 	},
-	"exclude": [ "test" ]
+	"exclude": [ "dist", "test" ]
 }
