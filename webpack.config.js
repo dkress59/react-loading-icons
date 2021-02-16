@@ -5,6 +5,10 @@ module.exports = (env, argv) => {
 	const production = argv.mode === 'production' && env === 'production'
 	return {
 		entry: {
+			'index': path.resolve(
+				__dirname,
+				'src/index.ts',
+			),
 			'audio': path.resolve(
 				__dirname,
 				'src/components/audio.tsx',
@@ -60,20 +64,8 @@ module.exports = (env, argv) => {
 		module: {
 			rules: [
 				{
-					test: /\.jsx?$/,
-					use: 'babel-loader',
-				},
-				{
 					test: /\.tsx?$/,
-					use: [
-						{
-							loader: 'babel-loader',
-						},
-						{
-							loader: 'ts-loader',
-							options: { allowTsInNodeModules: true },
-						},
-					],
+					use:  'ts-loader',
 				},
 			],
 		},

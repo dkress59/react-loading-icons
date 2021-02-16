@@ -6,8 +6,8 @@
     "type": "git",
     "ur;": "https://github.com/dkress59/react-loading-icons"
   },
-  "main": "dist/index.js",
-  "types": "src/index.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "peerDependendies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
@@ -41,11 +41,11 @@
     "webpack-cli": "^4.0.0-rc.1"
   },
   "scripts": {
-    "build": "webpack",
-    "check:script": "eslint --ext .js,.ts,.tsx .",
-    "lint:script": "eslint --ext .js,.ts,.tsx . --fix",
-    "postinstall": "yarn build",
-    "start": "webpack --watch",
+    "build": "tsc",
+		"check:script": "eslint --fix-dry-run './{src,test}/**/*.{js,ts,tsx}'",
+    "coverage": "jest --coverage",
+		"lint:script": "eslint --fix './{src,test}/**/*.{js,ts,tsx}'",
+    "prepare": "tsc",
     "test": "jest"
   },
   "keywords": [

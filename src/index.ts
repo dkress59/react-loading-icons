@@ -24,7 +24,7 @@ export const SpinningCircles = SpinningCirclesIcon
 export const TailSpin = TailSpinIcon
 export const ThreeDots = ThreeDotsIcon
 
-export default {
+const LoadingIcons = {
 	Audio,
 	BallTriangle,
 	Bars,
@@ -38,3 +38,4 @@ export default {
 	TailSpin,
 	ThreeDots,
 }
+export default LoadingIcons
