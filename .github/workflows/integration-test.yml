@@ -1,0 +1,78 @@
+name: Integration Test CI
+
+on:
+    push:
+        branches: [master, feature/workflow]
+    pull_request:
+        branches: [master, feature/workflow]
+
+jobs:
+    JavaScript:
+        runs-on: ubuntu-latest
+        env:
+            SLT: 'loading-icons-tester-js'
+            SLR: 'react-loading-icons'
+            WORKDIR: '/home/runner/work/react-loading-icons/react-loading-icons'
+
+        steps:
+            - uses: actions/checkout@v2
+            - uses: actions/setup-node@v2-beta
+              with:
+                  node-version: '15'
+                  check-latest: true
+
+            - name: Create React App
+              run: >-
+                  npx create-react-app ${{env.SLT}} &&
+                  cd ${{env.SLT}}
+
+            - name: Update Node Module
+              run: >-
+                  cd $WORKDIR &&
+                  rm -rf ${{env.SLT}}/node_modules/${{env.SLR}}/* &&
+                  rsync -av --progress . $WORKDIR/${{env.SLT}}/node_modules/${{env.SLR}} --exclude ./${{env.SLT}} &&
+                  ls -a ${{env.SLT}}/node_modules/${{env.SLR}} &&
+                  ls -a ${{env.SLT}}
+
+            - name: Build with imported Module
+              run: >-
+                  cd $WORKDIR &&
+                  rm -f ${{env.SLT}}/src/App.js ${{env.SLT}}/src/App.jsx &&
+                  cp test/install.test ${{env.SLT}}/src/App.jsx &&
+                  cd ${{env.SLT}} &&
+                  yarn build
+
+    TypeScript:
+        runs-on: ubuntu-latest
+        env:
+            SLT: 'loading-icons-tester-ts'
+            SLR: 'react-loading-icons'
+            WORKDIR: '/home/runner/work/react-loading-icons/react-loading-icons'
+
+        steps:
+            - uses: actions/checkout@v2
+            - uses: actions/setup-node@v2-beta
+              with:
+                  node-version: '15'
+                  check-latest: true
+
+            - name: Create React App
+              run: >-
+                  npx create-react-app ${{env.SLT}} --template typescript &&
+                  cd ${{env.SLT}}
+
+            - name: Update Node Module
+              run: >-
+                  cd $WORKDIR &&
+                  rm -rf ${{env.SLT}}/node_modules/${{env.SLR}}/* &&
+                  rsync -av --progress . $WORKDIR/${{env.SLT}}/node_modules/${{env.SLR}} --exclude ./${{env.SLT}} &&
+                  ls -a ${{env.SLT}}/node_modules/${{env.SLR}} &&
+                  ls -a ${{env.SLT}}
+
+            - name: Build with imported Module
+              run: >-
+                  cd $WORKDIR &&
+                  rm -f ${{env.SLT}}/src/App.ts ${{env.SLT}}/src/App.tsx &&
+                  cp test/install.test ${{env.SLT}}/src/App.tsx &&
+                  cd ${{env.SLT}} &&
+                  yarn build
