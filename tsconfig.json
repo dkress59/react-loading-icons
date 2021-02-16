@@ -11,5 +11,6 @@
 		"outDir": "./dist/",
 		"strict": true,
 		"target": "es5"
-	}
+	},
+	"exclude": [ "test" ]
 }
