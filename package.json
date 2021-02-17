@@ -51,7 +51,7 @@
     "lint:script": "eslint --fix './{src,test}/**/*.{js,ts,tsx}'",
     "postinstall": "tsc",
     "storybook:build": "build-storybook -s stories/assets",
-    "storybook:serve": "http-server storybook-static -p $PORT",
+    "storybook:serve": "serve storybook-static -l $PORT",
     "storybook": "start-storybook -p 9009 -s stories/assets",
     "test": "jest"
   },

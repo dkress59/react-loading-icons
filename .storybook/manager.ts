@@ -11,6 +11,9 @@ const theme = create({
 	//brandImage: 'http://127.0.0.1:9009/React-Loading-Icons-logo.png',
 	brandImage: Logo,
 	appBg: '#282c34',
+	barBg: '#282c34',
+	inputBg: '#282c34',
+	appContentBg: '#20232a',
   })
 addons.setConfig({
 	//isFullscreen: false,
