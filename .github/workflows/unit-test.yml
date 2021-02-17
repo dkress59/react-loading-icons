@@ -28,12 +28,10 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
-            - name: Share Test Coverage
-              uses: actions/setup-node@v1
+            - uses: actions/setup-node@v1
               with:
                   node-version: '15'
-              run: >-
-                  yarn add codecov &&
-                  yarn &&
-                  yarn coverage &&
-                  yarn codecov
+            - name: Install Dependencies
+              run: yarn && yarn add codecov
+            - name: Share Test Coverage
+              run: yarn coverage && yarn codecov
