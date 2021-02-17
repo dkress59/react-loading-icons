@@ -7,7 +7,7 @@ on:
         branches: [master, 'dependabot/*']
 
 jobs:
-    build:
+    test:
         runs-on: ubuntu-latest
 
         strategy:
@@ -23,3 +23,15 @@ jobs:
             - run: yarn
             - run: yarn build
             - run: yarn coverage
+    
+    coverage:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - uses: actions/setup-node@v1
+              with:
+                  node-version: '15'
+            - name: Install Dependencies
+              run: yarn && yarn add codecov
+            - name: Share Test Coverage
+              run: yarn coverage && yarn codecov
