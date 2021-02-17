@@ -43,7 +43,7 @@
     "check:script": "eslint --fix-dry-run './{src,test}/**/*.{js,ts,tsx}'",
     "coverage": "jest --coverage",
     "lint:script": "eslint --fix './{src,test}/**/*.{js,ts,tsx}'",
-    "prepare": "tsc",
+    "postinstall": "tsc",
     "test": "jest"
   },
   "keywords": [
