@@ -30,7 +30,7 @@ jobs:
               run: >-
                   cd $WORKDIR &&
                   rm -rf ${{env.SLT}}/node_modules/${{env.SLR}}/* &&
-                  rsync -av --progress . $WORKDIR/${{env.SLT}}/node_modules/${{env.SLR}} --exclude ./${{env.SLT}} &&
+                  rsync -av --progress . $WORKDIR/${{env.SLT}}/node_modules/${{env.SLR}} --exclude ${{env.SLT}} &&
                   ls -a ${{env.SLT}}/node_modules/${{env.SLR}} &&
                   ls -a ${{env.SLT}}
 
@@ -65,7 +65,7 @@ jobs:
               run: >-
                   cd $WORKDIR &&
                   rm -rf ${{env.SLT}}/node_modules/${{env.SLR}}/* &&
-                  rsync -av --progress . $WORKDIR/${{env.SLT}}/node_modules/${{env.SLR}} --exclude ./${{env.SLT}} &&
+                  rsync -av --progress . $WORKDIR/${{env.SLT}}/node_modules/${{env.SLR}} --exclude ${{env.SLT}} &&
                   ls -a ${{env.SLT}}/node_modules/${{env.SLR}} &&
                   ls -a ${{env.SLT}}
 
