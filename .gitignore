@@ -1,5 +1,6 @@
 .DS_Store
 .jest/cache*
 coverage*
-dist*
+dist
 node_modules*
+storybook-static

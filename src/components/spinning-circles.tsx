@@ -10,18 +10,12 @@ export default function SpinningCircles(
 				...props,
 				width: props.width ?? 58,
 				height: props.height ?? 58,
-				className: `icon-loading${
+				className: `svg-loaders-svg${
 					props.className ? ` ${props.className}` : ''
 				}`,
 			}}
 		>
-			<g
-				transform="translate(2 1)"
-				stroke="#fff"
-				strokeWidth={1.5}
-				fill="#fff"
-				fillRule="evenodd"
-			>
+			<g transform="translate(2 1)" fillRule="evenodd">
 				<circle cx={42.601} cy={11.462} r={5}>
 					<animate
 						attributeName="fill-opacity"
