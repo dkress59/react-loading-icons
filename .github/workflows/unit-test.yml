@@ -32,7 +32,8 @@ jobs:
               uses: actions/setup-node@v1
               with:
                   node-version: '15'
-            - run: yarn global add codecov
-            - run: yarn
-            - run: yarn coverage
-            - run: codecov
+              run: >-
+                  yarn add codecov &&
+                  yarn &&
+                  yarn coverage &&
+                  yarn codecov
