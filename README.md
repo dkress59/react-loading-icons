@@ -5,7 +5,7 @@
 [![codecov](https://codecov.io/gh/dkress59/react-loading-icons/branch/master/graph/badge.svg?token=4KMKEPIAWM)](https://codecov.io/gh/dkress59/react-loading-icons)
 ![Integration Test CI](https://github.com/dkress59/react-loading-icons/workflows/Integration%20Test%20CI/badge.svg)
 
-This is a zero-dependency React adaptation of Sam Herbert's [SVG Loaders](https://github.com/SamHerbert/SVG-Loaders) library. **Built with React 17 and TypeScript.**
+A zero-dependency React adaptation of Sam Herbert's [SVG Loaders](https://github.com/SamHerbert/SVG-Loaders) library. **Built with React 17 and TypeScript.**
 
 ## Usage
 
@@ -46,6 +46,8 @@ and use it without any fancy namespacing:
 ```tsx
 <Bars />
 ```
+
+and you can even go as far as copying over a single .js file from the `dist/components` folder to your project — this way you can directly import a certain loading icon without having to import the whole package.
 
 ### Components
 
