@@ -14,6 +14,8 @@ const theme = create({
 	appContentBg: '#20232a',
   })
 addons.setConfig({
+	isFullscreen: false,
 	panelPosition: 'right',
+	isToolshown: false,
 	theme: theme,
 })
