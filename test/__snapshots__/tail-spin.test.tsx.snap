@@ -18,17 +18,14 @@ exports[`<TailSpin /> component renders and matches snapshot 1`] = `
     >
       <stop
         offset="0%"
-        stop-color="#fff"
         stop-opacity="0"
       />
       <stop
         offset="63.146%"
-        stop-color="#fff"
         stop-opacity="0.631"
       />
       <stop
         offset="100%"
-        stop-color="#fff"
       />
     </lineargradient>
   </defs>
@@ -39,7 +36,6 @@ exports[`<TailSpin /> component renders and matches snapshot 1`] = `
   >
     <path
       d="M36 18c0-9.94-8.06-18-18-18"
-      stroke="url(#prefix__a)"
       stroke-width="2"
     >
       <animatetransform
@@ -54,7 +50,6 @@ exports[`<TailSpin /> component renders and matches snapshot 1`] = `
     <circle
       cx="36"
       cy="18"
-      fill="#fff"
       r="1"
     >
       <animatetransform
