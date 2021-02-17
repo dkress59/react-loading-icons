@@ -1,3 +1,4 @@
+// for integration test workflow only
 import React from 'react'
 import { Audio } from 'react-loading-icons'
 

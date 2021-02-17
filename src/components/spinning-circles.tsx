@@ -10,7 +10,7 @@ export default function SpinningCircles(
 				...props,
 				width: props.width ?? 58,
 				height: props.height ?? 58,
-				className: `svg-loaders-svg${
+				className: `icon-loading${
 					props.className ? ` ${props.className}` : ''
 				}`,
 			}}

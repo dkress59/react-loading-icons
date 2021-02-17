@@ -11,7 +11,7 @@ export default function Puff(
 				...props,
 				width: props.width ?? 44,
 				height: props.height ?? 44,
-				className: `svg-loaders-svg${
+				className: `icon-loading${
 					props.className ? ` ${props.className}` : ''
 				}`,
 			}}

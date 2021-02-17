@@ -11,7 +11,7 @@ export default function ThreeDots(
 				...props,
 				width: props.width ?? 120,
 				height: props.height ?? 30,
-				className: `svg-loaders-svg${
+				className: `icon-loading${
 					props.className ? ` ${props.className}` : ''
 				}`,
 			}}

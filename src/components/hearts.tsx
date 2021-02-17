@@ -11,7 +11,7 @@ export default function Hearts(
 				...props,
 				width: props.width ?? 140,
 				height: props.height ?? 64,
-				className: `svg-loaders-svg${
+				className: `icon-loading${
 					props.className ? ` ${props.className}` : ''
 				}`,
 			}}

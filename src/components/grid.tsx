@@ -11,7 +11,7 @@ export default function Grid(
 				...props,
 				width: props.width ?? 105,
 				height: props.height ?? 105,
-				className: `svg-loaders-svg${
+				className: `icon-loading${
 					props.className ? ` ${props.className}` : ''
 				}`,
 			}}

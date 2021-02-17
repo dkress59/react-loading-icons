@@ -11,7 +11,7 @@ export default function Rings(
 				...props,
 				width: props.width ?? 45,
 				height: props.height ?? 45,
-				className: `svg-loaders-svg${
+				className: `icon-loading${
 					props.className ? ` ${props.className}` : ''
 				}`,
 			}}

@@ -11,7 +11,7 @@ export default function Circles(
 				...props,
 				width: props.width ?? 135,
 				height: props.height ?? 135,
-				className: `svg-loaders-svg${
+				className: `icon-loading${
 					props.className ? ` ${props.className}` : ''
 				}`,
 			}}

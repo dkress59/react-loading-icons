@@ -11,7 +11,7 @@ export default function Oval(
 				...props,
 				width: props.width ?? 38,
 				height: props.height ?? 38,
-				className: `svg-loaders-svg${
+				className: `icon-loading${
 					props.className ? ` ${props.className}` : ''
 				}`,
 			}}

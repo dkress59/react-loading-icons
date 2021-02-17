@@ -11,7 +11,7 @@ export default function Audio(
 				...props,
 				width: props.width ?? 55,
 				height: props.height ?? 80,
-				className: `svg-loaders-svg${
+				className: `icon-loading${
 					props.className ? ` ${props.className}` : ''
 				}`,
 			}}

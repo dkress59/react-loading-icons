@@ -11,7 +11,7 @@ export default function Bars(
 				...props,
 				width: props.width ?? 135,
 				height: props.height ?? 140,
-				className: `svg-loaders-svg${
+				className: `icon-loading${
 					props.className ? ` ${props.className}` : ''
 				}`,
 			}}

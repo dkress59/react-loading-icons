@@ -11,7 +11,7 @@ export default function BallTriangle(
 				...props,
 				width: props.width ?? 57,
 				height: props.height ?? 57,
-				className: `svg-loaders-svg${
+				className: `icon-loading${
 					props.className ? ` ${props.className}` : ''
 				}`,
 			}}
