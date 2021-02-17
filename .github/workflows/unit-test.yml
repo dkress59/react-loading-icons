@@ -34,6 +34,5 @@ jobs:
                   node-version: '15'
             - run: yarn global add codecov
             - run: yarn
-            - run: yarn build
             - run: yarn coverage
-            - run: yarn codecov
+            - run: codecov
