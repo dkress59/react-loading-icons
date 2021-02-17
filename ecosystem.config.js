@@ -12,9 +12,8 @@ const env_production = {...env }
 module.exports = {
 	apps: [{
 		name: 'loading-icons',
-		script: 'yarn',
-		args: 'storybook:serve',
-		interpreter: '/bin/bash',
+		script: 'npm',
+		args: 'run storybook:serve',
 		env,
 		env_development,
 		env_production,

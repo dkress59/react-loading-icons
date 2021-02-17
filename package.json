@@ -50,7 +50,7 @@
     "postinstall": "tsc",
     "storybook:build": "build-storybook -s stories/assets",
     "storybook": "start-storybook -p 9009 -s stories/assets",
-    "storybook:serve": "yarn serve storybook-static -s -l $PORT",
+    "storybook:serve": "serve storybook-static -s -l $PORT",
     "test": "jest"
   },
   "keywords": [
