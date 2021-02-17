@@ -2,7 +2,7 @@ name: Unit Test CI
 
 on:
     push:
-        branches: [master, feature/workflow]
+        branches: [master]
     pull_request:
         branches: [master, 'dependabot/*']
 

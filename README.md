@@ -2,6 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/react-loading-icons.svg)](https://badge.fury.io/js/react-loading-icons)
 ![Unit Test CI](https://github.com/dkress59/react-loading-icons/workflows/Unit%20Test%20CI/badge.svg)
+[![codecov](https://codecov.io/gh/dkress59/react-loading-icons/branch/master/graph/badge.svg?token=4KMKEPIAWM)](https://codecov.io/gh/dkress59/react-loading-icons)
 ![Integration Test CI](https://github.com/dkress59/react-loading-icons/workflows/Integration%20Test%20CI/badge.svg)
 
 This is a zero-dependency React adaptation of Sam Herbert's [SVG Loaders](https://github.com/SamHerbert/SVG-Loaders) library. **Built with React 17 and TypeScript.**
