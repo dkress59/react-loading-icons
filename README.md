@@ -5,7 +5,10 @@
 [![codecov](https://codecov.io/gh/dkress59/react-loading-icons/branch/master/graph/badge.svg?token=4KMKEPIAWM)](https://codecov.io/gh/dkress59/react-loading-icons)
 ![Integration Test CI](https://github.com/dkress59/react-loading-icons/workflows/Integration%20Test%20CI/badge.svg)
 
-A zero-dependency React adaptation of Sam Herbert's [SVG Loaders](https://github.com/SamHerbert/SVG-Loaders) library. **Built with React 17 and TypeScript.**
+A zero-dependency React adaptation of Sam Herbert's [SVG Loaders](https://github.com/SamHerbert/SVG-Loaders) library.
+
+**Built with React 17 and TypeScript.**
+Check out the [Demo](https://loading.damiankress.de)!
 
 ## Usage
 
@@ -24,7 +27,7 @@ npm install react-loading-icons
 You can import all the loaders at once:
 
 ```ts
-import LoadingIcons from 'react-loading-icons';
+import LoadingIcons from 'react-loading-icons'
 ```
 
 and use them in a namespaced manner:

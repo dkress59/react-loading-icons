@@ -9,10 +9,7 @@ exports[`<SpinningCircles /> component renders and matches snapshot 1`] = `
   width="58"
 >
   <g
-    fill="#fff"
     fill-rule="evenodd"
-    stroke="#fff"
-    stroke-width="1.5"
     transform="translate(2 1)"
   >
     <circle

@@ -23,21 +23,13 @@ export default function TailSpin(
 					y2="23.865%"
 					id="prefix__a"
 				>
-					<stop stopColor="#fff" stopOpacity={0} offset="0%" />
-					<stop
-						stopColor="#fff"
-						stopOpacity={0.631}
-						offset="63.146%"
-					/>
-					<stop stopColor="#fff" offset="100%" />
+					<stop stopOpacity={0} offset="0%" />
+					<stop stopOpacity={0.631} offset="63.146%" />
+					<stop offset="100%" />
 				</linearGradient>
 			</defs>
 			<g transform="translate(1 1)" fill="none" fillRule="evenodd">
-				<path
-					d="M36 18c0-9.94-8.06-18-18-18"
-					stroke="url(#prefix__a)"
-					strokeWidth={2}
-				>
+				<path d="M36 18c0-9.94-8.06-18-18-18" strokeWidth={2}>
 					<animateTransform
 						attributeName="transform"
 						type="rotate"
@@ -47,7 +39,7 @@ export default function TailSpin(
 						repeatCount="indefinite"
 					/>
 				</path>
-				<circle fill="#fff" cx={36} cy={18} r={1}>
+				<circle cx={36} cy={18} r={1}>
 					<animateTransform
 						attributeName="transform"
 						type="rotate"

@@ -15,13 +15,7 @@ export default function SpinningCircles(
 				}`,
 			}}
 		>
-			<g
-				transform="translate(2 1)"
-				stroke="#fff"
-				strokeWidth={1.5}
-				fill="#fff"
-				fillRule="evenodd"
-			>
+			<g transform="translate(2 1)" fillRule="evenodd">
 				<circle cx={42.601} cy={11.462} r={5}>
 					<animate
 						attributeName="fill-opacity"
