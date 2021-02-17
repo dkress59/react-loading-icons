@@ -2,9 +2,9 @@ name: Integration Test CI
 
 on:
     push:
-        branches: [master, feature/workflow]
+        branches: [master]
     pull_request:
-        branches: [master, feature/workflow]
+        branches: [master]
 
 jobs:
     JavaScript:
@@ -26,7 +26,7 @@ jobs:
                   npx create-react-app ${{env.LIT}} &&
                   cd ${{env.LIT}}
 
-            - name: Update Node Module
+            - name: Link NPM Package
               run: >-
                   cd $WORKDIR &&
                   yarn link
@@ -57,7 +57,7 @@ jobs:
                   npx create-react-app ${{env.SLT}} --template typescript &&
                   cd ${{env.SLT}}
 
-            - name: Update Node Module
+            - name: Link NPM Package
               run: >-
                   cd $WORKDIR &&
                   yarn link
