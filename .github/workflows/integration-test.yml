@@ -34,14 +34,14 @@ jobs:
             - name: Build with imported Module
               run: >-
                   cd $WORKDIR &&
-                  cd ${{env.SLT}} &&
+                  cd ${{env.LIT}} &&
                   yarn link ${{env.RLI}} &&
                   yarn build
 
     TypeScript:
         runs-on: ubuntu-latest
         env:
-            SLT: 'loading-icons-tester-ts'
+            LIT: 'loading-icons-tester-ts'
             RLI: 'react-loading-icons'
             WORKDIR: '/home/runner/work/react-loading-icons/react-loading-icons'
 
@@ -54,8 +54,8 @@ jobs:
 
             - name: Create React App
               run: >-
-                  npx create-react-app ${{env.SLT}} --template typescript &&
-                  cd ${{env.SLT}}
+                  npx create-react-app ${{env.LIT}} --template typescript &&
+                  cd ${{env.LIT}}
 
             - name: Link NPM Package
               run: >-
@@ -65,6 +65,6 @@ jobs:
             - name: Build with imported Module
               run: >-
                   cd $WORKDIR &&
-                  cd ${{env.SLT}} &&
+                  cd ${{env.LIT}} &&
                   yarn link ${{env.RLI}} &&
                   yarn build
