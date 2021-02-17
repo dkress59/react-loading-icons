@@ -1,6 +1,6 @@
 {
   "name": "react-loading-icons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React implementation of the SVG Loaders library by Sam Herbert",
   "repository": {
     "type": "git",
@@ -40,9 +40,9 @@
   },
   "scripts": {
     "build": "tsc",
-		"check:script": "eslint --fix-dry-run './{src,test}/**/*.{js,ts,tsx}'",
+    "check:script": "eslint --fix-dry-run './{src,test}/**/*.{js,ts,tsx}'",
     "coverage": "jest --coverage",
-		"lint:script": "eslint --fix './{src,test}/**/*.{js,ts,tsx}'",
+    "lint:script": "eslint --fix './{src,test}/**/*.{js,ts,tsx}'",
     "prepare": "tsc",
     "test": "jest"
   },
