@@ -2,7 +2,7 @@ name: Unit Test CI
 
 on:
     push:
-        branches: [master]
+        branches: [master, feature/workflow]
     pull_request:
         branches: [master, 'dependabot/*']
 
@@ -12,7 +12,7 @@ jobs:
 
         strategy:
             matrix:
-                node-version: [10.x, 12.x, 14.x, 15.x]
+                node-version: [10.x, 12.x, 14.x]
 
         steps:
             - uses: actions/checkout@v2
@@ -22,4 +22,13 @@ jobs:
                   node-version: ${{ matrix.node-version }}
             - run: yarn
             - run: yarn build
+            - run: yarn test
+            - name: Use Node.js 15.x
+              uses: actions/setup-node@v1
+              with:
+                  node-version: 15.x
+            - run: yarn global add codecov
+            - run: yarn
+            - run: yarn build
             - run: yarn coverage
+            - run: yarn codecov
