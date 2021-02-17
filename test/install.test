@@ -1,0 +1,8 @@
+import React from 'react'
+import { Audio } from 'react-loading-icons'
+
+export default function App() {
+  return (
+   <Audio fill="#c00" />
+  )
+}

@@ -1,0 +1,70 @@
+name: Integration Test CI
+
+on:
+    push:
+        branches: [master]
+    pull_request:
+        branches: [master]
+
+jobs:
+    JavaScript:
+        runs-on: ubuntu-latest
+        env:
+            LIT: 'loading-icons-tester-js'
+            RLI: 'react-loading-icons'
+            WORKDIR: '/home/runner/work/react-loading-icons/react-loading-icons'
+
+        steps:
+            - uses: actions/checkout@v2
+            - uses: actions/setup-node@v2-beta
+              with:
+                  node-version: '15'
+                  check-latest: true
+
+            - name: Create React App
+              run: >-
+                  npx create-react-app ${{env.LIT}} &&
+                  cd ${{env.LIT}}
+
+            - name: Link NPM Package
+              run: >-
+                  cd $WORKDIR &&
+                  yarn link
+
+            - name: Build with imported Module
+              run: >-
+                  cd $WORKDIR &&
+                  cd ${{env.LIT}} &&
+                  yarn link ${{env.RLI}} &&
+                  yarn build
+
+    TypeScript:
+        runs-on: ubuntu-latest
+        env:
+            LIT: 'loading-icons-tester-ts'
+            RLI: 'react-loading-icons'
+            WORKDIR: '/home/runner/work/react-loading-icons/react-loading-icons'
+
+        steps:
+            - uses: actions/checkout@v2
+            - uses: actions/setup-node@v2-beta
+              with:
+                  node-version: '15'
+                  check-latest: true
+
+            - name: Create React App
+              run: >-
+                  npx create-react-app ${{env.LIT}} --template typescript &&
+                  cd ${{env.LIT}}
+
+            - name: Link NPM Package
+              run: >-
+                  cd $WORKDIR &&
+                  yarn link
+
+            - name: Build with imported Module
+              run: >-
+                  cd $WORKDIR &&
+                  cd ${{env.LIT}} &&
+                  yarn link ${{env.RLI}} &&
+                  yarn build
