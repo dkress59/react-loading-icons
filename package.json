@@ -4,13 +4,16 @@
   "description": "React implementation of the SVG Loaders library by Sam Herbert",
   "repository": {
     "type": "git",
-    "ur;": "https://github.com/dkress59/react-loading-icons.git"
+    "url": "git+https://github.com/dkress59/react-loading-icons.git"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "peerDependendies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react": "^16.0.0 | ^17.0.0",
+    "react-dom": "^16.0.0 | ^17.0.0"
+  },
+  "publishConfig": {
+    "registry":"https://registry.npmjs.org"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
