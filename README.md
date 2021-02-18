@@ -1,14 +1,16 @@
-# React SVG Loaders
+# React Loading Icons
 
 [![npm version](https://badge.fury.io/js/react-loading-icons.svg)](https://badge.fury.io/js/react-loading-icons)
 ![Unit Test CI](https://github.com/dkress59/react-loading-icons/workflows/Unit%20Test%20CI/badge.svg)
 [![codecov](https://codecov.io/gh/dkress59/react-loading-icons/branch/master/graph/badge.svg?token=4KMKEPIAWM)](https://codecov.io/gh/dkress59/react-loading-icons)
 ![Integration Test CI](https://github.com/dkress59/react-loading-icons/workflows/Integration%20Test%20CI/badge.svg)
 
-A zero-dependency React adaptation of Sam Herbert's [SVG Loaders](https://github.com/SamHerbert/SVG-Loaders) library.
+A pure SVG zero-dependency React adaptation of Sam Herbert's [SVG Loaders](https://github.com/SamHerbert/SVG-Loaders) library.
 
 **Built with React 17 and TypeScript.**
 Check out the [Demo](https://loading.damiankress.de)!
+
+Also works with JavaScript, of course.
 
 ## Usage
 
@@ -50,7 +52,7 @@ and use it without any fancy namespacing:
 <Bars />
 ```
 
-and you can even go as far as copying over a single .js file from the `dist/components` folder to your project — this way you can directly import a certain loading icon without having to import the whole package.
+You can even go as far as copying over a single .js file from the `dist/components` directory to your project — this way you can directly import a certain loading icon without having to import the whole package.
 
 ### Components
 
@@ -71,7 +73,7 @@ and you can even go as far as copying over a single .js file from the `dist/comp
 
 ## Options
 
-Each of these components should be able to accept any [SVG tag presentation attributes](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/Presentation) as props.
+Each of these components will accept any [SVG tag presentation attributes](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/Presentation) as well as all valid JSX properties (`key`, `onClick`, …) as props.
 
 ## Common Usage
 

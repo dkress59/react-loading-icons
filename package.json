@@ -1,10 +1,10 @@
 {
   "name": "react-loading-icons",
-  "version": "1.1.0",
+  "version": "1.0.2",
   "description": "React implementation of the SVG Loaders library by Sam Herbert",
   "repository": {
     "type": "git",
-    "ur;": "https://github.com/dkress59/react-loading-icons"
+    "ur;": "https://github.com/dkress59/react-loading-icons.git"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -50,10 +50,9 @@
     "check:script": "eslint --fix-dry-run './{src,test}/**/*.{js,ts,tsx}'",
     "coverage": "jest --coverage",
     "lint:script": "eslint --fix './{src,test}/**/*.{js,ts,tsx}'",
-    "postinstall": "tsc",
-    "prestorybook:build": "yarn cache:clean",
-    "prestorybook:serve": "yarn cache:clean",
-    "prestorybook": "yarn cache:clean",
+    "prestorybook:build": "npm run cache:clean",
+    "prestorybook:serve": "npm run cache:clean",
+    "prestorybook": "npm run cache:clean",
     "storybook:build": "build-storybook -s stories/assets",
     "storybook:serve": "serve storybook-static -l $PORT",
     "storybook": "start-storybook -p 9009 -s stories/assets",
