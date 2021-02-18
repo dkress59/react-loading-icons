@@ -2,6 +2,6 @@ module.exports = {
 	extends: ['@sprylab/eslint-config/react'],
 
 	parserOptions: {
-		project: './tsconfig.json',
+		project: './tsconfig.eslint.json',
 	},
 }

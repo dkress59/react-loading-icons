@@ -13,7 +13,14 @@ describe('<ThreeDots /> component', () => {
 		expect(svg.getAttribute('class')).toBe('icon-loading')
 	})
 	it('inherits props', () => {
-		render(<ThreeDots data-testid="icon" height="2em" width="auto" className="test" />)
+		render(
+			<ThreeDots
+				data-testid="icon"
+				height="2em"
+				width="auto"
+				className="test"
+			/>,
+		)
 		const svg = screen.getByTestId('icon')
 		expect(svg.getAttribute('height')).toBe('2em')
 		expect(svg.getAttribute('width')).toBe('auto')

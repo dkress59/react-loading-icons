@@ -13,7 +13,14 @@ describe('<Oval /> component', () => {
 		expect(svg.getAttribute('class')).toBe('icon-loading')
 	})
 	it('inherits props', () => {
-		render(<Oval data-testid="icon" height="2em" width="auto" className="test" />)
+		render(
+			<Oval
+				data-testid="icon"
+				height="2em"
+				width="auto"
+				className="test"
+			/>,
+		)
 		const svg = screen.getByTestId('icon')
 		expect(svg.getAttribute('height')).toBe('2em')
 		expect(svg.getAttribute('width')).toBe('auto')
