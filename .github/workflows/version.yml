@@ -16,7 +16,7 @@ jobs:
         with:
           ref: ${{ github.ref }}
       - name: "Setup Node.js"
-        uses: "actions/setup-node@v1"
+        uses: "actions/setup-node@v2"
         with:
           node-version: 15
       - name: "Automated version bump"
@@ -29,7 +29,7 @@ jobs:
           NEW_TAG: ${{ steps.version-bump.outputs.newTag }}|
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          npm i npm@latest -g
+          npm i npm@7 -g
           npm i --production=false
           npm run build
           npm config set //registry.npmjs.org/:_authToken ${ NPM_TOKEN }
