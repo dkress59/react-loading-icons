@@ -29,9 +29,8 @@ jobs:
           NEW_TAG: ${{ steps.version-bump.outputs.newTag }}|
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          npm i npm@7 -g
-          npm i --production=false
-          npm run build
+          yarn --production=false
+          yarn build
           npm config set //registry.npmjs.org/:_authToken ${ NPM_TOKEN }
           npm publish
       - name: 'Output new version'
