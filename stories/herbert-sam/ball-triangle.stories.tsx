@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 import { IconProps, IconStroke, IconStrokeArgs } from '../util'
 import { Meta } from '@storybook/react'
+import { testProps } from './util'
 import BallTriangle from '../../src/components/ball-triangle'
 import React from 'react'
-
 export default {
 	title: 'Sam Herbert/Ball Triangle',
 	component: BallTriangle,

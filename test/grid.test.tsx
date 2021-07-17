@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react'
-import React from 'react'
-
+import { testProps } from './util'
 import Grid from '../src/components/grid'
+import React from 'react'
 
 describe('<Grid /> component', () => {
 	it('renders and matches snapshot', () => {
@@ -13,14 +13,7 @@ describe('<Grid /> component', () => {
 		expect(svg.getAttribute('class')).toBe('icon-loading')
 	})
 	it('inherits props', () => {
-		render(
-			<Grid
-				data-testid="icon"
-				height="2em"
-				width="auto"
-				className="test"
-			/>,
-		)
+		render(<Grid {...testProps} />)
 		const svg = screen.getByTestId('icon')
 		expect(svg.getAttribute('height')).toBe('2em')
 		expect(svg.getAttribute('width')).toBe('auto')

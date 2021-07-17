@@ -3,27 +3,33 @@ import { SVGProps } from 'react'
 
 export type IconProps = JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
 export const IconFill: IconProps = {
-	height: '3em',
-	width: undefined,
 	fill: '#06bcee',
 	fillOpacity: 1,
+	height: '3em',
+	speed: 1,
 	stroke: 'transparent',
+	strokeOpacity: 1,
+	width: undefined,
 }
 export const IconStroke: IconProps = {
-	height: '3em',
-	width: undefined,
-	stroke: '#06bcee',
-	strokeWidth: 2,
-	strokeOpacity: 1,
 	fill: 'transparent',
+	fillOpacity: 1,
+	height: '3em',
+	speed: 1,
+	stroke: '#06bcee',
+	strokeOpacity: 1,
+	strokeWidth: 2,
+	width: undefined,
 }
 export const IconStrokeFill: IconProps = {
-	height: '3em',
-	width: undefined,
 	fill: '#06bcee',
+	fillOpacity: 1,
+	height: '3em',
+	speed: 1,
 	stroke: '#06bcee',
-	strokeWidth: 2,
 	strokeOpacity: 1,
+	strokeWidth: 2,
+	width: undefined,
 }
 
 export const IconFillArgs: ArgTypes = {
@@ -47,15 +53,11 @@ export const IconFillArgs: ArgTypes = {
 		control: 'color',
 		defaultValue: 'transparent',
 	},
-	// FIXME:
-	/* fillOpacity: {
-		name: 'Fill-Opacity',
-		control: 'range',
-		min: 0,
-		max: 1,
-		step: '0.05',
+	speed: {
+		name: 'Speed',
+		control: 'number',
 		defaultValue: 1,
-	}, */
+	},
 }
 export const IconStrokeArgs: ArgTypes = {
 	height: {
@@ -78,15 +80,11 @@ export const IconStrokeArgs: ArgTypes = {
 		control: 'color',
 		defaultValue: '#06bcee',
 	},
-	// FIXME:
-	/* strokeOpacity: {
-		name: 'Stroke-Opacity',
-		control: 'range',
-		min: 0,
-		max: 1,
-		step: '0.05',
+	speed: {
+		name: 'Speed',
+		control: 'number',
 		defaultValue: 1,
-	}, */
+	},
 }
 export const IconStrokeFillArgs: ArgTypes = {
 	height: {
@@ -109,13 +107,9 @@ export const IconStrokeFillArgs: ArgTypes = {
 		control: 'color',
 		defaultValue: '#06bcee',
 	},
-	// FIXME:
-	/* strokeOpacity: {
-		name: 'Stroke-Opacity',
-		control: 'range',
-		min: 0,
-		max: 1,
-		step: '0.05',
+	speed: {
+		name: 'Speed',
+		control: 'number',
 		defaultValue: 1,
-	}, */
+	},
 }

@@ -9,6 +9,7 @@ exports[`<SpinningCircles /> component renders and matches snapshot 1`] = `
   width="58"
 >
   <g
+    fill="#fff"
     fill-rule="evenodd"
     transform="translate(2 1)"
   >
@@ -21,7 +22,7 @@ exports[`<SpinningCircles /> component renders and matches snapshot 1`] = `
         attributeName="fill-opacity"
         begin="0s"
         calcMode="linear"
-        dur="1.3s"
+        dur="NaNs"
         repeatCount="indefinite"
         values="1;0;0;0;0;0;0;0"
       />
@@ -36,7 +37,7 @@ exports[`<SpinningCircles /> component renders and matches snapshot 1`] = `
         attributeName="fill-opacity"
         begin="0s"
         calcMode="linear"
-        dur="1.3s"
+        dur="NaNs"
         repeatCount="indefinite"
         values="0;1;0;0;0;0;0;0"
       />
@@ -51,7 +52,7 @@ exports[`<SpinningCircles /> component renders and matches snapshot 1`] = `
         attributeName="fill-opacity"
         begin="0s"
         calcMode="linear"
-        dur="1.3s"
+        dur="NaNs"
         repeatCount="indefinite"
         values="0;0;1;0;0;0;0;0"
       />
@@ -66,7 +67,7 @@ exports[`<SpinningCircles /> component renders and matches snapshot 1`] = `
         attributeName="fill-opacity"
         begin="0s"
         calcMode="linear"
-        dur="1.3s"
+        dur="NaNs"
         repeatCount="indefinite"
         values="0;0;0;1;0;0;0;0"
       />
@@ -81,7 +82,7 @@ exports[`<SpinningCircles /> component renders and matches snapshot 1`] = `
         attributeName="fill-opacity"
         begin="0s"
         calcMode="linear"
-        dur="1.3s"
+        dur="NaNs"
         repeatCount="indefinite"
         values="0;0;0;0;1;0;0;0"
       />
@@ -96,7 +97,7 @@ exports[`<SpinningCircles /> component renders and matches snapshot 1`] = `
         attributeName="fill-opacity"
         begin="0s"
         calcMode="linear"
-        dur="1.3s"
+        dur="NaNs"
         repeatCount="indefinite"
         values="0;0;0;0;0;1;0;0"
       />
@@ -111,7 +112,7 @@ exports[`<SpinningCircles /> component renders and matches snapshot 1`] = `
         attributeName="fill-opacity"
         begin="0s"
         calcMode="linear"
-        dur="1.3s"
+        dur="NaNs"
         repeatCount="indefinite"
         values="0;0;0;0;0;0;1;0"
       />
@@ -126,7 +127,7 @@ exports[`<SpinningCircles /> component renders and matches snapshot 1`] = `
         attributeName="fill-opacity"
         begin="0s"
         calcMode="linear"
-        dur="1.3s"
+        dur="NaNs"
         repeatCount="indefinite"
         values="0;0;0;0;0;0;0;1"
       />

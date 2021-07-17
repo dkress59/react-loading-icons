@@ -73,17 +73,17 @@ You can even go as far as copying over a single .js file from the `dist/componen
 
 ## Options
 
-Each of these components will accept any [SVG tag presentation attributes](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/Presentation) as well as all valid JSX properties (`key`, `onClick`, …) as props.
+Each of these components will accept any [SVG tag presentation attributes](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/Presentation) as well as all valid JSX properties (`key`, `onClick`, …) as props. Animation speed can be controlled via **speed** attribute (`1` = 100% speed, `.5` = 50% speed, `2` = 200%, and so on). The components are also smart about inheriting `fill`, `fillOpacity`, `stroke`, `strokeOpactiy` and `strokeWidth`, so these can also easily be controlled.
 
 ## Common Usage
 
 ```tsx
-// render the Puff loader with a stroke opacity of .125
-<Puff strokeOpacity=".125" />
-
-// render the Puff loader with a stroke of mint green
+// renders the Puff icon with a mint green stroke
 <Puff stroke="#98ff98" />
 
-// render the Puff loader with a stroke of mint green and a stroke opactiy of .125
-<Puff stroke="#98ff98" strokeOpacity=".125" />
+// renders the Puff icon's mint green stroke with an opacity of 12.5%
+<Puff stroke="#98ff98" strokeOpacity={.125} />
+
+// renders the Puff icon at 75% speed with a mint green stroke with an opacity of 12.5%
+<Puff stroke="#98ff98" strokeOpacity={.125} speed={.75} />
 ```

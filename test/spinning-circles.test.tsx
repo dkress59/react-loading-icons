@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
+import { testProps } from './util'
 import React from 'react'
-
 import SpinningCircles from '../src/components/spinning-circles'
 
 describe('<SpinningCircles /> component', () => {
@@ -13,14 +13,7 @@ describe('<SpinningCircles /> component', () => {
 		expect(svg.getAttribute('class')).toBe('icon-loading')
 	})
 	it('inherits props', () => {
-		render(
-			<SpinningCircles
-				data-testid="icon"
-				height="2em"
-				width="auto"
-				className="test"
-			/>,
-		)
+		render(<SpinningCircles {...testProps} />)
 		const svg = screen.getByTestId('icon')
 		expect(svg.getAttribute('height')).toBe('2em')
 		expect(svg.getAttribute('width')).toBe('auto')

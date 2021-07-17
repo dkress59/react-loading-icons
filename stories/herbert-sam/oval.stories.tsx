@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 import { IconProps, IconStroke, IconStrokeArgs } from '../util'
 import { Meta } from '@storybook/react'
+import { testProps } from './util'
 import Oval from '../../src/components/oval'
 import React from 'react'
-
 export default {
 	title: 'Sam Herbert/Oval',
 	component: Oval,
@@ -12,5 +12,7 @@ export default {
 
 const Template = (args: IconProps) => <Oval {...args} />
 export const Demo = Template.bind({})
-//@ts-ignore
+export const Radar = Template.bind({})
+
 Demo.args = IconStroke
+Radar.args = { ...IconStroke, strokeWidth: 36 }

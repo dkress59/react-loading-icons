@@ -1,10 +1,99 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Audio /> component inherits props 1`] = `
+<svg
+  class="icon-loading test"
+  data-testid="icon"
+  height="2em"
+  viewBox="0 0 55 80"
+  width="auto"
+>
+  <g
+    transform="matrix(1 0 0 -1 0 80)"
+  >
+    <rect
+      fill="#000"
+      fill-opacity=".5"
+      height="20"
+      rx="3"
+      stroke="#fff"
+      stroke-opacity=".5"
+      width="10"
+    >
+      <animate
+        attributeName="height"
+        begin="0s"
+        calcMode="linear"
+        dur="NaNs"
+        repeatCount="indefinite"
+        values="20;45;57;80;64;32;66;45;64;23;66;13;64;56;34;34;2;23;76;79;20"
+      />
+    </rect>
+    <rect
+      fill="#000"
+      fill-opacity=".5"
+      height="80"
+      rx="3"
+      stroke="#fff"
+      stroke-opacity=".5"
+      width="10"
+      x="15"
+    >
+      <animate
+        attributeName="height"
+        begin="0s"
+        calcMode="linear"
+        dur="NaNs"
+        repeatCount="indefinite"
+        values="80;55;33;5;75;23;73;33;12;14;60;80"
+      />
+    </rect>
+    <rect
+      fill="#000"
+      fill-opacity=".5"
+      height="50"
+      rx="3"
+      stroke="#fff"
+      stroke-opacity=".5"
+      width="10"
+      x="30"
+    >
+      <animate
+        attributeName="height"
+        begin="0s"
+        calcMode="linear"
+        dur="NaNs"
+        repeatCount="indefinite"
+        values="50;34;78;23;56;23;34;76;80;54;21;50"
+      />
+    </rect>
+    <rect
+      fill="#000"
+      fill-opacity=".5"
+      height="30"
+      rx="3"
+      stroke="#fff"
+      stroke-opacity=".5"
+      width="10"
+      x="45"
+    >
+      <animate
+        attributeName="height"
+        begin="0s"
+        calcMode="linear"
+        dur="NaNs"
+        repeatCount="indefinite"
+        values="30;45;13;80;56;72;45;76;34;23;67;30"
+      />
+    </rect>
+  </g>
+</svg>
+`;
+
 exports[`<Audio /> component renders and matches snapshot 1`] = `
 <svg
   class="icon-loading"
   data-testid="icon"
-  fill="#fff"
   height="80"
   viewBox="0 0 55 80"
   width="55"
@@ -13,22 +102,26 @@ exports[`<Audio /> component renders and matches snapshot 1`] = `
     transform="matrix(1 0 0 -1 0 80)"
   >
     <rect
+      fill="#fff"
       height="20"
       rx="3"
+      stroke="transparent"
       width="10"
     >
       <animate
         attributeName="height"
         begin="0s"
         calcMode="linear"
-        dur="4.3s"
+        dur="NaNs"
         repeatCount="indefinite"
         values="20;45;57;80;64;32;66;45;64;23;66;13;64;56;34;34;2;23;76;79;20"
       />
     </rect>
     <rect
+      fill="#fff"
       height="80"
       rx="3"
+      stroke="transparent"
       width="10"
       x="15"
     >
@@ -36,14 +129,16 @@ exports[`<Audio /> component renders and matches snapshot 1`] = `
         attributeName="height"
         begin="0s"
         calcMode="linear"
-        dur="2s"
+        dur="NaNs"
         repeatCount="indefinite"
         values="80;55;33;5;75;23;73;33;12;14;60;80"
       />
     </rect>
     <rect
+      fill="#fff"
       height="50"
       rx="3"
+      stroke="transparent"
       width="10"
       x="30"
     >
@@ -51,14 +146,16 @@ exports[`<Audio /> component renders and matches snapshot 1`] = `
         attributeName="height"
         begin="0s"
         calcMode="linear"
-        dur="1.4s"
+        dur="NaNs"
         repeatCount="indefinite"
         values="50;34;78;23;56;23;34;76;80;54;21;50"
       />
     </rect>
     <rect
+      fill="#fff"
       height="30"
       rx="3"
+      stroke="transparent"
       width="10"
       x="45"
     >
@@ -66,7 +163,7 @@ exports[`<Audio /> component renders and matches snapshot 1`] = `
         attributeName="height"
         begin="0s"
         calcMode="linear"
-        dur="2s"
+        dur="NaNs"
         repeatCount="indefinite"
         values="30;45;13;80;56;72;45;76;34;23;67;30"
       />

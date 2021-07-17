@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 import { IconFill, IconFillArgs, IconProps } from '../util'
 import { Meta } from '@storybook/react'
+import { testProps } from './util'
 import Circles from '../../src/components/circles'
 import React from 'react'
-
 export default {
 	title: 'Sam Herbert/Circles',
 	component: Circles,

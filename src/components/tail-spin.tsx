@@ -3,17 +3,27 @@ import React, { ReactElement, SVGProps } from 'react'
 export default function TailSpin(
 	props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>,
 ): ReactElement {
+	const speed = Number(String(props.speed)) ?? 1
+	const stroke = props.stroke ?? '#fff'
+	const strokeWidth = props.strokeWidth ?? 2
+	const strokeOpacity = props.strokeOpacity
 	return (
 		<svg
-			viewBox="0 0 38 38"
 			{...{
 				...props,
-				width: props.width ?? 38,
+				className: props.className
+					? `icon-loading ${props.className}`
+					: 'icon-loading',
+				fill: undefined,
+				fillOpacity: undefined,
 				height: props.height ?? 38,
-				className: `icon-loading${
-					props.className ? ` ${props.className}` : ''
-				}`,
+				speed: undefined,
+				stroke: undefined,
+				strokeOpacity: undefined,
+				strokeWidth: undefined,
+				width: props.width ?? 38,
 			}}
+			viewBox="0 0 38 38"
 		>
 			<defs>
 				<linearGradient
@@ -29,13 +39,16 @@ export default function TailSpin(
 				</linearGradient>
 			</defs>
 			<g transform="translate(1 1)" fill="none" fillRule="evenodd">
-				<path d="M36 18c0-9.94-8.06-18-18-18" strokeWidth={2}>
+				<path
+					d="M36 18c0-9.94-8.06-18-18-18"
+					{...{ stroke, strokeWidth, strokeOpacity }}
+				>
 					<animateTransform
 						attributeName="transform"
 						type="rotate"
 						from="0 18 18"
 						to="360 18 18"
-						dur="0.9s"
+						dur={`${0.9 / speed}s`}
 						repeatCount="indefinite"
 					/>
 				</path>
@@ -45,7 +58,7 @@ export default function TailSpin(
 						type="rotate"
 						from="0 18 18"
 						to="360 18 18"
-						dur="0.9s"
+						dur={`${0.9 / speed}s`}
 						repeatCount="indefinite"
 					/>
 				</circle>

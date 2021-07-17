@@ -3,24 +3,39 @@ import React, { ReactElement, SVGProps } from 'react'
 export default function SpinningCircles(
 	props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>,
 ): ReactElement {
+	const speed = Number(String(props.speed)) ?? 1
+	const fill = props.fill ?? '#fff'
+	const stroke = props.stroke
+	const fillOpacity = props.fillOpacity
+	const strokeOpacity = props.strokeOpacity
 	return (
 		<svg
-			viewBox="0 0 58 58"
 			{...{
 				...props,
-				width: props.width ?? 58,
+				className: props.className
+					? `icon-loading ${props.className}`
+					: 'icon-loading',
+				fill: undefined,
+				fillOpacity: undefined,
 				height: props.height ?? 58,
-				className: `icon-loading${
-					props.className ? ` ${props.className}` : ''
-				}`,
+				speed: undefined,
+				stroke: undefined,
+				strokeOpacity: undefined,
+				strokeWidth: undefined,
+				width: props.width ?? 58,
 			}}
+			viewBox="0 0 58 58"
 		>
-			<g transform="translate(2 1)" fillRule="evenodd">
+			<g
+				transform="translate(2 1)"
+				fillRule="evenodd"
+				{...{ fill, stroke, fillOpacity, strokeOpacity }}
+			>
 				<circle cx={42.601} cy={11.462} r={5}>
 					<animate
 						attributeName="fill-opacity"
 						begin="0s"
-						dur="1.3s"
+						dur={`${1.3 / speed}s`}
 						values="1;0;0;0;0;0;0;0"
 						calcMode="linear"
 						repeatCount="indefinite"
@@ -30,7 +45,7 @@ export default function SpinningCircles(
 					<animate
 						attributeName="fill-opacity"
 						begin="0s"
-						dur="1.3s"
+						dur={`${1.3 / speed}s`}
 						values="0;1;0;0;0;0;0;0"
 						calcMode="linear"
 						repeatCount="indefinite"
@@ -40,7 +55,7 @@ export default function SpinningCircles(
 					<animate
 						attributeName="fill-opacity"
 						begin="0s"
-						dur="1.3s"
+						dur={`${1.3 / speed}s`}
 						values="0;0;1;0;0;0;0;0"
 						calcMode="linear"
 						repeatCount="indefinite"
@@ -50,7 +65,7 @@ export default function SpinningCircles(
 					<animate
 						attributeName="fill-opacity"
 						begin="0s"
-						dur="1.3s"
+						dur={`${1.3 / speed}s`}
 						values="0;0;0;1;0;0;0;0"
 						calcMode="linear"
 						repeatCount="indefinite"
@@ -60,7 +75,7 @@ export default function SpinningCircles(
 					<animate
 						attributeName="fill-opacity"
 						begin="0s"
-						dur="1.3s"
+						dur={`${1.3 / speed}s`}
 						values="0;0;0;0;1;0;0;0"
 						calcMode="linear"
 						repeatCount="indefinite"
@@ -70,7 +85,7 @@ export default function SpinningCircles(
 					<animate
 						attributeName="fill-opacity"
 						begin="0s"
-						dur="1.3s"
+						dur={`${1.3 / speed}s`}
 						values="0;0;0;0;0;1;0;0"
 						calcMode="linear"
 						repeatCount="indefinite"
@@ -80,7 +95,7 @@ export default function SpinningCircles(
 					<animate
 						attributeName="fill-opacity"
 						begin="0s"
-						dur="1.3s"
+						dur={`${1.3 / speed}s`}
 						values="0;0;0;0;0;0;1;0"
 						calcMode="linear"
 						repeatCount="indefinite"
@@ -90,7 +105,7 @@ export default function SpinningCircles(
 					<animate
 						attributeName="fill-opacity"
 						begin="0s"
-						dur="1.3s"
+						dur={`${1.3 / speed}s`}
 						values="0;0;0;0;0;0;0;1"
 						calcMode="linear"
 						repeatCount="indefinite"
