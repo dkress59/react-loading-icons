@@ -5,13 +5,14 @@ exports[`<Oval /> component renders and matches snapshot 1`] = `
   class="icon-loading"
   data-testid="icon"
   height="38"
-  stroke="#fff"
+  overflow="visible"
   viewBox="0 0 38 38"
   width="38"
 >
   <g
     fill="none"
     fill-rule="evenodd"
+    stroke="#fff"
     stroke-width="2"
     transform="translate(1 1)"
   >
@@ -26,7 +27,7 @@ exports[`<Oval /> component renders and matches snapshot 1`] = `
     >
       <animatetransform
         attributeName="transform"
-        dur="1s"
+        dur="NaNs"
         from="0 18 18"
         repeatCount="indefinite"
         to="360 18 18"

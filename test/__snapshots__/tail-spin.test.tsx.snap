@@ -36,11 +36,12 @@ exports[`<TailSpin /> component renders and matches snapshot 1`] = `
   >
     <path
       d="M36 18c0-9.94-8.06-18-18-18"
+      stroke="#fff"
       stroke-width="2"
     >
       <animatetransform
         attributeName="transform"
-        dur="0.9s"
+        dur="NaNs"
         from="0 18 18"
         repeatCount="indefinite"
         to="360 18 18"
@@ -54,7 +55,7 @@ exports[`<TailSpin /> component renders and matches snapshot 1`] = `
     >
       <animatetransform
         attributeName="transform"
-        dur="0.9s"
+        dur="NaNs"
         from="0 18 18"
         repeatCount="indefinite"
         to="360 18 18"

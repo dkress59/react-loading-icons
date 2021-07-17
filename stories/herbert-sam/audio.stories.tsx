@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 import { IconFill, IconFillArgs, IconProps } from '../util'
 import { Meta } from '@storybook/react'
+import { testProps } from './util'
 import Audio from '../../src/components/audio'
 import React from 'react'
-
 export default {
 	title: 'Sam Herbert/Audio',
 	component: Audio,

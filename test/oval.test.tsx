@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react'
-import React from 'react'
-
+import { testProps } from './util'
 import Oval from '../src/components/oval'
+import React from 'react'
 
 describe('<Oval /> component', () => {
 	it('renders and matches snapshot', () => {
@@ -13,14 +13,7 @@ describe('<Oval /> component', () => {
 		expect(svg.getAttribute('class')).toBe('icon-loading')
 	})
 	it('inherits props', () => {
-		render(
-			<Oval
-				data-testid="icon"
-				height="2em"
-				width="auto"
-				className="test"
-			/>,
-		)
+		render(<Oval {...testProps} />)
 		const svg = screen.getByTestId('icon')
 		expect(svg.getAttribute('height')).toBe('2em')
 		expect(svg.getAttribute('width')).toBe('auto')

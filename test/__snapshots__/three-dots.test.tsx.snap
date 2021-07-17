@@ -4,7 +4,6 @@ exports[`<ThreeDots /> component renders and matches snapshot 1`] = `
 <svg
   class="icon-loading"
   data-testid="icon"
-  fill="#fff"
   height="30"
   viewBox="0 0 120 30"
   width="120"
@@ -12,13 +11,14 @@ exports[`<ThreeDots /> component renders and matches snapshot 1`] = `
   <circle
     cx="15"
     cy="15"
+    fill="#fff"
     r="15"
   >
     <animate
       attributeName="r"
       begin="0s"
       calcMode="linear"
-      dur="0.8s"
+      dur="NaNs"
       from="15"
       repeatCount="indefinite"
       to="15"
@@ -28,7 +28,7 @@ exports[`<ThreeDots /> component renders and matches snapshot 1`] = `
       attributeName="fill-opacity"
       begin="0s"
       calcMode="linear"
-      dur="0.8s"
+      dur="NaNs"
       from="1"
       repeatCount="indefinite"
       to="1"
@@ -38,14 +38,14 @@ exports[`<ThreeDots /> component renders and matches snapshot 1`] = `
   <circle
     cx="60"
     cy="15"
-    fill-opacity="0.3"
+    fill="#fff"
     r="9"
   >
     <animate
       attributeName="r"
       begin="0s"
       calcMode="linear"
-      dur="0.8s"
+      dur="NaNs"
       from="9"
       repeatCount="indefinite"
       to="9"
@@ -55,7 +55,7 @@ exports[`<ThreeDots /> component renders and matches snapshot 1`] = `
       attributeName="fill-opacity"
       begin="0s"
       calcMode="linear"
-      dur="0.8s"
+      dur="NaNs"
       from="0.5"
       repeatCount="indefinite"
       to="0.5"
@@ -65,13 +65,14 @@ exports[`<ThreeDots /> component renders and matches snapshot 1`] = `
   <circle
     cx="105"
     cy="15"
+    fill="#fff"
     r="15"
   >
     <animate
       attributeName="r"
       begin="0s"
       calcMode="linear"
-      dur="0.8s"
+      dur="NaNs"
       from="15"
       repeatCount="indefinite"
       to="15"
@@ -81,7 +82,7 @@ exports[`<ThreeDots /> component renders and matches snapshot 1`] = `
       attributeName="fill-opacity"
       begin="0s"
       calcMode="linear"
-      dur="0.8s"
+      dur="NaNs"
       from="1"
       repeatCount="indefinite"
       to="1"

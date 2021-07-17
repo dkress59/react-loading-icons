@@ -5,13 +5,13 @@ exports[`<Rings /> component renders and matches snapshot 1`] = `
   class="icon-loading"
   data-testid="icon"
   height="45"
-  stroke="#fff"
   viewBox="0 0 45 45"
   width="45"
 >
   <g
     fill="none"
     fill-rule="evenodd"
+    stroke="#fff"
     stroke-width="2"
     transform="translate(1 1)"
   >
@@ -19,13 +19,12 @@ exports[`<Rings /> component renders and matches snapshot 1`] = `
       cx="22"
       cy="22"
       r="6"
-      stroke-opacity="0"
     >
       <animate
         attributeName="r"
         begin="1.5s"
         calcMode="linear"
-        dur="3s"
+        dur="NaNs"
         repeatCount="indefinite"
         values="6;22"
       />
@@ -33,7 +32,7 @@ exports[`<Rings /> component renders and matches snapshot 1`] = `
         attributeName="stroke-opacity"
         begin="1.5s"
         calcMode="linear"
-        dur="3s"
+        dur="NaNs"
         repeatCount="indefinite"
         values="1;0"
       />
@@ -41,7 +40,7 @@ exports[`<Rings /> component renders and matches snapshot 1`] = `
         attributeName="stroke-width"
         begin="1.5s"
         calcMode="linear"
-        dur="3s"
+        dur="NaNs"
         repeatCount="indefinite"
         values="2;0"
       />
@@ -50,13 +49,12 @@ exports[`<Rings /> component renders and matches snapshot 1`] = `
       cx="22"
       cy="22"
       r="6"
-      stroke-opacity="0"
     >
       <animate
         attributeName="r"
         begin="3s"
         calcMode="linear"
-        dur="3s"
+        dur="NaNs"
         repeatCount="indefinite"
         values="6;22"
       />
@@ -64,7 +62,7 @@ exports[`<Rings /> component renders and matches snapshot 1`] = `
         attributeName="stroke-opacity"
         begin="3s"
         calcMode="linear"
-        dur="3s"
+        dur="NaNs"
         repeatCount="indefinite"
         values="1;0"
       />
@@ -72,7 +70,7 @@ exports[`<Rings /> component renders and matches snapshot 1`] = `
         attributeName="stroke-width"
         begin="3s"
         calcMode="linear"
-        dur="3s"
+        dur="NaNs"
         repeatCount="indefinite"
         values="2;0"
       />
@@ -86,7 +84,7 @@ exports[`<Rings /> component renders and matches snapshot 1`] = `
         attributeName="r"
         begin="0s"
         calcMode="linear"
-        dur="1.5s"
+        dur="NaNs"
         repeatCount="indefinite"
         values="6;1;2;3;4;5;6"
       />

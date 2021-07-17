@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react'
-import React from 'react'
-
+import { testProps } from './util'
 import Hearts from '../src/components/hearts'
+import React from 'react'
 
 describe('<Hearts /> component', () => {
 	it('renders and matches snapshot', () => {
@@ -13,14 +13,7 @@ describe('<Hearts /> component', () => {
 		expect(svg.getAttribute('class')).toBe('icon-loading')
 	})
 	it('inherits props', () => {
-		render(
-			<Hearts
-				data-testid="icon"
-				height="2em"
-				width="auto"
-				className="test"
-			/>,
-		)
+		render(<Hearts {...testProps} />)
 		const svg = screen.getByTestId('icon')
 		expect(svg.getAttribute('height')).toBe('2em')
 		expect(svg.getAttribute('width')).toBe('auto')

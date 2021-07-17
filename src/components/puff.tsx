@@ -3,25 +3,38 @@ import React, { ReactElement, SVGProps } from 'react'
 export default function Puff(
 	props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>,
 ): ReactElement {
+	const speed = Number(String(props.speed)) ?? 1
+	const stroke = props.stroke ?? '#fff'
+	const strokeWidth = props.strokeWidth ?? 2
+	const strokeOpacity = props.strokeOpacity
 	return (
 		<svg
-			stroke="#fff"
-			viewBox="0 0 44 44"
 			{...{
 				...props,
-				width: props.width ?? 44,
+				className: props.className
+					? `icon-loading ${props.className}`
+					: 'icon-loading',
+				fill: undefined,
+				fillOpacity: undefined,
 				height: props.height ?? 44,
-				className: `icon-loading${
-					props.className ? ` ${props.className}` : ''
-				}`,
+				speed: undefined,
+				stroke: undefined,
+				strokeOpacity: undefined,
+				strokeWidth: undefined,
+				width: props.width ?? 44,
 			}}
+			viewBox="0 0 44 44"
 		>
-			<g fill="none" fillRule="evenodd" strokeWidth={2}>
+			<g
+				fill="none"
+				fillRule="evenodd"
+				{...{ stroke, strokeWidth, strokeOpacity }}
+			>
 				<circle cx={22} cy={22} r={1}>
 					<animate
 						attributeName="r"
 						begin="0s"
-						dur="1.8s"
+						dur={`${1.8 / speed}s`}
 						values="1; 20"
 						calcMode="spline"
 						keyTimes="0; 1"
@@ -31,7 +44,7 @@ export default function Puff(
 					<animate
 						attributeName="stroke-opacity"
 						begin="0s"
-						dur="1.8s"
+						dur={`${1.8 / speed}s`}
 						values="1; 0"
 						calcMode="spline"
 						keyTimes="0; 1"
@@ -43,7 +56,7 @@ export default function Puff(
 					<animate
 						attributeName="r"
 						begin="-0.9s"
-						dur="1.8s"
+						dur={`${1.8 / speed}s`}
 						values="1; 20"
 						calcMode="spline"
 						keyTimes="0; 1"
@@ -53,7 +66,7 @@ export default function Puff(
 					<animate
 						attributeName="stroke-opacity"
 						begin="-0.9s"
-						dur="1.8s"
+						dur={`${1.8 / speed}s`}
 						values="1; 0"
 						calcMode="spline"
 						keyTimes="0; 1"

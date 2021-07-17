@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
+import { testProps } from './util'
 import React from 'react'
-
 import ThreeDots from '../src/components/three-dots'
 
 describe('<ThreeDots /> component', () => {
@@ -13,14 +13,7 @@ describe('<ThreeDots /> component', () => {
 		expect(svg.getAttribute('class')).toBe('icon-loading')
 	})
 	it('inherits props', () => {
-		render(
-			<ThreeDots
-				data-testid="icon"
-				height="2em"
-				width="auto"
-				className="test"
-			/>,
-		)
+		render(<ThreeDots {...testProps} />)
 		const svg = screen.getByTestId('icon')
 		expect(svg.getAttribute('height')).toBe('2em')
 		expect(svg.getAttribute('width')).toBe('auto')

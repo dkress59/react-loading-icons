@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
+import { testProps } from './util'
 import React from 'react'
-
 import Rings from '../src/components/rings'
 
 describe('<Rings /> component', () => {
@@ -13,14 +13,7 @@ describe('<Rings /> component', () => {
 		expect(svg.getAttribute('class')).toBe('icon-loading')
 	})
 	it('inherits props', () => {
-		render(
-			<Rings
-				data-testid="icon"
-				height="2em"
-				width="auto"
-				className="test"
-			/>,
-		)
+		render(<Rings {...testProps} />)
 		const svg = screen.getByTestId('icon')
 		expect(svg.getAttribute('height')).toBe('2em')
 		expect(svg.getAttribute('width')).toBe('auto')
