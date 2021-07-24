@@ -14,7 +14,7 @@ exports[`<Circles /> component renders and matches snapshot 1`] = `
   >
     <animatetransform
       attributeName="transform"
-      dur="NaNs"
+      dur="2.5s"
       from="0 67 67"
       repeatCount="indefinite"
       to="-360 67 67"
@@ -27,7 +27,7 @@ exports[`<Circles /> component renders and matches snapshot 1`] = `
   >
     <animatetransform
       attributeName="transform"
-      dur="NaNs"
+      dur="8s"
       from="0 67 67"
       repeatCount="indefinite"
       to="360 67 67"

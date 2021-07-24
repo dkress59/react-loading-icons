@@ -27,7 +27,7 @@ exports[`<Oval /> component renders and matches snapshot 1`] = `
     >
       <animatetransform
         attributeName="transform"
-        dur="NaNs"
+        dur="1s"
         from="0 18 18"
         repeatCount="indefinite"
         to="360 18 18"

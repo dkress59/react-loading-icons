@@ -24,7 +24,7 @@ exports[`<Audio /> component inherits props 1`] = `
         attributeName="height"
         begin="0s"
         calcMode="linear"
-        dur="NaNs"
+        dur="4.3s"
         repeatCount="indefinite"
         values="20;45;57;80;64;32;66;45;64;23;66;13;64;56;34;34;2;23;76;79;20"
       />
@@ -43,7 +43,7 @@ exports[`<Audio /> component inherits props 1`] = `
         attributeName="height"
         begin="0s"
         calcMode="linear"
-        dur="NaNs"
+        dur="2s"
         repeatCount="indefinite"
         values="80;55;33;5;75;23;73;33;12;14;60;80"
       />
@@ -62,7 +62,7 @@ exports[`<Audio /> component inherits props 1`] = `
         attributeName="height"
         begin="0s"
         calcMode="linear"
-        dur="NaNs"
+        dur="1.4s"
         repeatCount="indefinite"
         values="50;34;78;23;56;23;34;76;80;54;21;50"
       />
@@ -81,7 +81,7 @@ exports[`<Audio /> component inherits props 1`] = `
         attributeName="height"
         begin="0s"
         calcMode="linear"
-        dur="NaNs"
+        dur="2s"
         repeatCount="indefinite"
         values="30;45;13;80;56;72;45;76;34;23;67;30"
       />
@@ -112,7 +112,7 @@ exports[`<Audio /> component renders and matches snapshot 1`] = `
         attributeName="height"
         begin="0s"
         calcMode="linear"
-        dur="NaNs"
+        dur="4.3s"
         repeatCount="indefinite"
         values="20;45;57;80;64;32;66;45;64;23;66;13;64;56;34;34;2;23;76;79;20"
       />
@@ -129,7 +129,7 @@ exports[`<Audio /> component renders and matches snapshot 1`] = `
         attributeName="height"
         begin="0s"
         calcMode="linear"
-        dur="NaNs"
+        dur="2s"
         repeatCount="indefinite"
         values="80;55;33;5;75;23;73;33;12;14;60;80"
       />
@@ -146,7 +146,7 @@ exports[`<Audio /> component renders and matches snapshot 1`] = `
         attributeName="height"
         begin="0s"
         calcMode="linear"
-        dur="NaNs"
+        dur="1.4s"
         repeatCount="indefinite"
         values="50;34;78;23;56;23;34;76;80;54;21;50"
       />
@@ -163,7 +163,7 @@ exports[`<Audio /> component renders and matches snapshot 1`] = `
         attributeName="height"
         begin="0s"
         calcMode="linear"
-        dur="NaNs"
+        dur="2s"
         repeatCount="indefinite"
         values="30;45;13;80;56;72;45;76;34;23;67;30"
       />

@@ -3,7 +3,7 @@ import React, { ReactElement, SVGProps } from 'react'
 export default function Audio(
 	props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>,
 ): ReactElement {
-	const speed = Number(String(props.speed)) ?? 1
+	const speed = Number(String(props.speed ?? 1))
 	const fill = props.fill ?? '#fff'
 	const stroke = props.stroke ?? 'transparent'
 	const fillOpacity = props.fillOpacity

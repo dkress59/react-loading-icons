@@ -41,7 +41,7 @@ exports[`<TailSpin /> component renders and matches snapshot 1`] = `
     >
       <animatetransform
         attributeName="transform"
-        dur="NaNs"
+        dur="0.9s"
         from="0 18 18"
         repeatCount="indefinite"
         to="360 18 18"
@@ -55,7 +55,7 @@ exports[`<TailSpin /> component renders and matches snapshot 1`] = `
     >
       <animatetransform
         attributeName="transform"
-        dur="NaNs"
+        dur="0.9s"
         from="0 18 18"
         repeatCount="indefinite"
         to="360 18 18"

@@ -3,7 +3,7 @@ import React, { ReactElement, SVGProps } from 'react'
 export default function BallTriangle(
 	props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>,
 ): ReactElement {
-	const speed = Number(String(props.speed)) ?? 1
+	const speed = Number(String(props.speed ?? 1))
 	const fill = props.fill
 	const stroke = props.stroke ?? '#fff'
 	const fillOpacity = props.fillOpacity

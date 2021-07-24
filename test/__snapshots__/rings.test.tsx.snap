@@ -24,7 +24,7 @@ exports[`<Rings /> component renders and matches snapshot 1`] = `
         attributeName="r"
         begin="1.5s"
         calcMode="linear"
-        dur="NaNs"
+        dur="3s"
         repeatCount="indefinite"
         values="6;22"
       />
@@ -32,7 +32,7 @@ exports[`<Rings /> component renders and matches snapshot 1`] = `
         attributeName="stroke-opacity"
         begin="1.5s"
         calcMode="linear"
-        dur="NaNs"
+        dur="3s"
         repeatCount="indefinite"
         values="1;0"
       />
@@ -40,7 +40,7 @@ exports[`<Rings /> component renders and matches snapshot 1`] = `
         attributeName="stroke-width"
         begin="1.5s"
         calcMode="linear"
-        dur="NaNs"
+        dur="3s"
         repeatCount="indefinite"
         values="2;0"
       />
@@ -54,7 +54,7 @@ exports[`<Rings /> component renders and matches snapshot 1`] = `
         attributeName="r"
         begin="3s"
         calcMode="linear"
-        dur="NaNs"
+        dur="3s"
         repeatCount="indefinite"
         values="6;22"
       />
@@ -62,7 +62,7 @@ exports[`<Rings /> component renders and matches snapshot 1`] = `
         attributeName="stroke-opacity"
         begin="3s"
         calcMode="linear"
-        dur="NaNs"
+        dur="3s"
         repeatCount="indefinite"
         values="1;0"
       />
@@ -70,7 +70,7 @@ exports[`<Rings /> component renders and matches snapshot 1`] = `
         attributeName="stroke-width"
         begin="3s"
         calcMode="linear"
-        dur="NaNs"
+        dur="3s"
         repeatCount="indefinite"
         values="2;0"
       />
@@ -84,7 +84,7 @@ exports[`<Rings /> component renders and matches snapshot 1`] = `
         attributeName="r"
         begin="0s"
         calcMode="linear"
-        dur="NaNs"
+        dur="1.5s"
         repeatCount="indefinite"
         values="6;1;2;3;4;5;6"
       />

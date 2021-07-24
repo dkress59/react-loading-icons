@@ -3,7 +3,7 @@ import React, { ReactElement, SVGProps } from 'react'
 export default function Oval(
 	props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>,
 ): ReactElement {
-	const speed = Number(String(props.speed)) ?? 1
+	const speed = Number(String(props.speed ?? 1))
 	const stroke = props.stroke ?? '#fff'
 	const strokeWidth = props.strokeWidth ?? 2
 	const strokeOpacity = props.strokeOpacity

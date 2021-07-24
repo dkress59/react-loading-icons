@@ -17,7 +17,7 @@ exports[`<Hearts /> component renders and matches snapshot 1`] = `
       attributeName="fill-opacity"
       begin="0s"
       calcMode="linear"
-      dur="NaNs"
+      dur="1.4s"
       repeatCount="indefinite"
       values="0.5;1;0.5"
     />
@@ -31,7 +31,7 @@ exports[`<Hearts /> component renders and matches snapshot 1`] = `
       attributeName="fill-opacity"
       begin="0.7s"
       calcMode="linear"
-      dur="NaNs"
+      dur="1.4s"
       repeatCount="indefinite"
       values="0.5;1;0.5"
     />

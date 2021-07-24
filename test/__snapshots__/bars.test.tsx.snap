@@ -22,7 +22,7 @@ exports[`<Bars /> component inherits props 1`] = `
       attributeName="height"
       begin="0.5s"
       calcMode="linear"
-      dur="NaNs"
+      dur="1s"
       repeatCount="indefinite"
       values="120;110;100;90;80;70;60;50;40;140;120"
     />
@@ -30,7 +30,7 @@ exports[`<Bars /> component inherits props 1`] = `
       attributeName="y"
       begin="0.5s"
       calcMode="linear"
-      dur="NaNs"
+      dur="1s"
       repeatCount="indefinite"
       values="10;15;20;25;30;35;40;45;50;0;10"
     />
@@ -50,7 +50,7 @@ exports[`<Bars /> component inherits props 1`] = `
       attributeName="height"
       begin="0.25s"
       calcMode="linear"
-      dur="NaNs"
+      dur="1s"
       repeatCount="indefinite"
       values="120;110;100;90;80;70;60;50;40;140;120"
     />
@@ -58,7 +58,7 @@ exports[`<Bars /> component inherits props 1`] = `
       attributeName="y"
       begin="0.25s"
       calcMode="linear"
-      dur="NaNs"
+      dur="1s"
       repeatCount="indefinite"
       values="10;15;20;25;30;35;40;45;50;0;10"
     />
@@ -77,7 +77,7 @@ exports[`<Bars /> component inherits props 1`] = `
       attributeName="height"
       begin="0s"
       calcMode="linear"
-      dur="NaNs"
+      dur="1s"
       repeatCount="indefinite"
       values="120;110;100;90;80;70;60;50;40;140;120"
     />
@@ -85,7 +85,7 @@ exports[`<Bars /> component inherits props 1`] = `
       attributeName="y"
       begin="0s"
       calcMode="linear"
-      dur="NaNs"
+      dur="1s"
       repeatCount="indefinite"
       values="10;15;20;25;30;35;40;45;50;0;10"
     />
@@ -105,7 +105,7 @@ exports[`<Bars /> component inherits props 1`] = `
       attributeName="height"
       begin="0.25s"
       calcMode="linear"
-      dur="NaNs"
+      dur="1s"
       repeatCount="indefinite"
       values="120;110;100;90;80;70;60;50;40;140;120"
     />
@@ -113,7 +113,7 @@ exports[`<Bars /> component inherits props 1`] = `
       attributeName="y"
       begin="0.25s"
       calcMode="linear"
-      dur="NaNs"
+      dur="1s"
       repeatCount="indefinite"
       values="10;15;20;25;30;35;40;45;50;0;10"
     />
@@ -133,7 +133,7 @@ exports[`<Bars /> component inherits props 1`] = `
       attributeName="height"
       begin="0.5s"
       calcMode="linear"
-      dur="NaNs"
+      dur="1s"
       repeatCount="indefinite"
       values="120;110;100;90;80;70;60;50;40;140;120"
     />
@@ -141,7 +141,7 @@ exports[`<Bars /> component inherits props 1`] = `
       attributeName="y"
       begin="0.5s"
       calcMode="linear"
-      dur="NaNs"
+      dur="1s"
       repeatCount="indefinite"
       values="10;15;20;25;30;35;40;45;50;0;10"
     />
@@ -168,7 +168,7 @@ exports[`<Bars /> component renders and matches snapshot 1`] = `
       attributeName="height"
       begin="0.5s"
       calcMode="linear"
-      dur="NaNs"
+      dur="1s"
       repeatCount="indefinite"
       values="120;110;100;90;80;70;60;50;40;140;120"
     />
@@ -176,7 +176,7 @@ exports[`<Bars /> component renders and matches snapshot 1`] = `
       attributeName="y"
       begin="0.5s"
       calcMode="linear"
-      dur="NaNs"
+      dur="1s"
       repeatCount="indefinite"
       values="10;15;20;25;30;35;40;45;50;0;10"
     />
@@ -193,7 +193,7 @@ exports[`<Bars /> component renders and matches snapshot 1`] = `
       attributeName="height"
       begin="0.25s"
       calcMode="linear"
-      dur="NaNs"
+      dur="1s"
       repeatCount="indefinite"
       values="120;110;100;90;80;70;60;50;40;140;120"
     />
@@ -201,7 +201,7 @@ exports[`<Bars /> component renders and matches snapshot 1`] = `
       attributeName="y"
       begin="0.25s"
       calcMode="linear"
-      dur="NaNs"
+      dur="1s"
       repeatCount="indefinite"
       values="10;15;20;25;30;35;40;45;50;0;10"
     />
@@ -217,7 +217,7 @@ exports[`<Bars /> component renders and matches snapshot 1`] = `
       attributeName="height"
       begin="0s"
       calcMode="linear"
-      dur="NaNs"
+      dur="1s"
       repeatCount="indefinite"
       values="120;110;100;90;80;70;60;50;40;140;120"
     />
@@ -225,7 +225,7 @@ exports[`<Bars /> component renders and matches snapshot 1`] = `
       attributeName="y"
       begin="0s"
       calcMode="linear"
-      dur="NaNs"
+      dur="1s"
       repeatCount="indefinite"
       values="10;15;20;25;30;35;40;45;50;0;10"
     />
@@ -242,7 +242,7 @@ exports[`<Bars /> component renders and matches snapshot 1`] = `
       attributeName="height"
       begin="0.25s"
       calcMode="linear"
-      dur="NaNs"
+      dur="1s"
       repeatCount="indefinite"
       values="120;110;100;90;80;70;60;50;40;140;120"
     />
@@ -250,7 +250,7 @@ exports[`<Bars /> component renders and matches snapshot 1`] = `
       attributeName="y"
       begin="0.25s"
       calcMode="linear"
-      dur="NaNs"
+      dur="1s"
       repeatCount="indefinite"
       values="10;15;20;25;30;35;40;45;50;0;10"
     />
@@ -267,7 +267,7 @@ exports[`<Bars /> component renders and matches snapshot 1`] = `
       attributeName="height"
       begin="0.5s"
       calcMode="linear"
-      dur="NaNs"
+      dur="1s"
       repeatCount="indefinite"
       values="120;110;100;90;80;70;60;50;40;140;120"
     />
@@ -275,7 +275,7 @@ exports[`<Bars /> component renders and matches snapshot 1`] = `
       attributeName="y"
       begin="0.5s"
       calcMode="linear"
-      dur="NaNs"
+      dur="1s"
       repeatCount="indefinite"
       values="10;15;20;25;30;35;40;45;50;0;10"
     />
