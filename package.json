@@ -12,6 +12,9 @@
     "react": "^16.0.0 | ^17.0.0",
     "react-dom": "^16.0.0 | ^17.0.0"
   },
+  "engines": {
+    "node": "> 12.0.0"
+  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },

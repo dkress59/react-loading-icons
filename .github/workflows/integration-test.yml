@@ -26,10 +26,12 @@ jobs:
                   npx create-react-app ${{env.LIT}} &&
                   cd ${{env.LIT}}
 
+            - name: Install Dependencies
+              run: >-
+                  cd $WORKDIR && yarn
+
             - name: Build with linked Module
               run: >-
-                  cd $WORKDIR &&
-                  yarn &&
                   cd ${{env.LIT}} &&
                   yarn link $WORKDIR &&
                   yarn build
@@ -53,10 +55,12 @@ jobs:
                   npx create-react-app ${{env.LIT}} --template typescript &&
                   cd ${{env.LIT}}
 
-            - name: Build with imported Module
+            - name: Install Dependencies
               run: >-
-                  cd $WORKDIR &&
-                  yarn &&
+                  cd $WORKDIR && yarn
+
+            - name: Build with linked Module
+              run: >-
                   cd ${{env.LIT}} &&
                   yarn link $WORKDIR &&
                   yarn build
