@@ -4,7 +4,7 @@ on:
     push:
         branches: [master]
     pull_request:
-        branches: [master]
+        branches: [master, 'dependabot/*']
 
 jobs:
     JavaScript:
@@ -35,7 +35,7 @@ jobs:
             - name: Build with linked Module
               run: >-
                   cd ${{env.LIT}} &&
-                  yarn link $WORKDIR &&
+                  yarn add $WORKDIR &&
                   yarn build
 
     TypeScript:
@@ -66,5 +66,5 @@ jobs:
             - name: Build with linked Module
               run: >-
                   cd ${{env.LIT}} &&
-                  yarn link $WORKDIR &&
+                  yarn add $WORKDIR &&
                   yarn build
