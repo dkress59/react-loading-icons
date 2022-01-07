@@ -15,7 +15,6 @@ jobs:
             WORKDIR: '/home/runner/work/react-loading-icons/react-loading-icons'
 
         steps:
-            - run: echo $CWD && echo $PWD && pwd
             - uses: actions/checkout@v2
             - uses: actions/setup-node@v2-beta
               with:
@@ -27,7 +26,7 @@ jobs:
                   npx create-react-app ${{env.APP}} &&
                   cd ${{env.APP}} &&
                   yarn &&
-                  yarn add wordpress-api-client
+                  yarn add react-loading-icons
 
             - name: Install Dependencies
               run: >-
@@ -60,7 +59,7 @@ jobs:
                   npx create-react-app ${{env.APP}} --template typescript &&
                   cd ${{env.APP}} &&
                   yarn &&
-                  yarn add wordpress-api-client
+                  yarn add react-loading-icons
 
             - name: Build latest client
               run: >-
