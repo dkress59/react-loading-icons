@@ -24,7 +24,8 @@ jobs:
             - name: Create React App
               run: >-
                   npx create-react-app ${{env.LIT}} &&
-                  cd ${{env.LIT}}
+                  cd ${{env.LIT}} &&
+                  yarn add wordpress-api-client
 
             - name: Install Dependencies
               run: >-
@@ -35,7 +36,7 @@ jobs:
             - name: Build with linked Module
               run: >-
                   cd ${{env.LIT}} &&
-                  yarn add $WORKDIR &&
+                  yarn link $WORKDIR &&
                   yarn build
 
     TypeScript:
@@ -55,7 +56,8 @@ jobs:
             - name: Create React App
               run: >-
                   npx create-react-app ${{env.LIT}} --template typescript &&
-                  cd ${{env.LIT}}
+                  cd ${{env.LIT}} &&
+                  yarn add wordpress-api-client
 
             - name: Install Dependencies
               run: >-
@@ -66,5 +68,5 @@ jobs:
             - name: Build with linked Module
               run: >-
                   cd ${{env.LIT}} &&
-                  yarn add $WORKDIR &&
+                  yarn link $WORKDIR &&
                   yarn build
