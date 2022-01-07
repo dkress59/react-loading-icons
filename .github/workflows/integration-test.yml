@@ -25,6 +25,7 @@ jobs:
               run: >-
                   npx create-react-app ${{env.LIT}} &&
                   cd ${{env.LIT}} &&
+                  yarn &&
                   yarn add wordpress-api-client
 
             - name: Install Dependencies
@@ -57,6 +58,7 @@ jobs:
               run: >-
                   npx create-react-app ${{env.LIT}} --template typescript &&
                   cd ${{env.LIT}} &&
+                  yarn &&
                   yarn add wordpress-api-client
 
             - name: Install Dependencies
