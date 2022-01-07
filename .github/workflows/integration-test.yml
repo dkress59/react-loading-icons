@@ -69,4 +69,5 @@ jobs:
               run: >-
                   cd ${{env.LIT}} &&
                   yarn link $WORKDIR &&
+                  yarn &&
                   yarn build
