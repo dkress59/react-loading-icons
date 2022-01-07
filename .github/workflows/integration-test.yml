@@ -26,16 +26,11 @@ jobs:
                   npx create-react-app ${{env.LIT}} &&
                   cd ${{env.LIT}}
 
-            - name: Link NPM Package
-              run: >-
-                  cd $WORKDIR &&
-                  yarn link
-
-            - name: Build with imported Module
+            - name: Build with linked Module
               run: >-
                   cd $WORKDIR &&
                   cd ${{env.LIT}} &&
-                  yarn link ${{env.RLI}} &&
+                  yarn link $WORKDIR &&
                   yarn build
 
     TypeScript:
@@ -57,14 +52,9 @@ jobs:
                   npx create-react-app ${{env.LIT}} --template typescript &&
                   cd ${{env.LIT}}
 
-            - name: Link NPM Package
-              run: >-
-                  cd $WORKDIR &&
-                  yarn link
-
             - name: Build with imported Module
               run: >-
                   cd $WORKDIR &&
                   cd ${{env.LIT}} &&
-                  yarn link ${{env.RLI}} &&
+                  yarn link $WORKDIR &&
                   yarn build
