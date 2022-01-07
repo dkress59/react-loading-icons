@@ -10,5 +10,6 @@ module.exports = {
 		},
 	},
 	cacheDirectory: '.jest/cache',
+	testEnvironment: 'jsdom',
 	testRegex: '(/test/*|(\\.|/)(test|spec))\\.tsx?$',
 }

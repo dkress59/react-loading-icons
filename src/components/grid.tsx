@@ -45,8 +45,8 @@ export default function Grid(
 				cx={12.5}
 				cy={52.5}
 				r={12.5}
-				fillOpacity={0.5}
-				{...{ fill, stroke, fillOpacity, strokeOpacity }}
+				fillOpacity={fillOpacity ?? 0.5}
+				{...{ fill, stroke, strokeOpacity }}
 			>
 				<animate
 					attributeName="fill-opacity"

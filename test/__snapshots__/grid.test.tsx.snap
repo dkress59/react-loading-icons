@@ -27,6 +27,7 @@ exports[`<Grid /> component renders and matches snapshot 1`] = `
     cx="12.5"
     cy="52.5"
     fill="#fff"
+    fill-opacity="0.5"
     r="12.5"
   >
     <animate

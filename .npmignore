@@ -7,6 +7,9 @@ stories
 .DS_Store
 .jest/cache*
 coverage*
+.pnp.*
+.yarn/*
+
 # dist
 node_modules*
 storybook-static

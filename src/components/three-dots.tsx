@@ -57,8 +57,8 @@ export default function ThreeDots(
 				cx={60}
 				cy={15}
 				r={9}
-				fillOpacity={0.3}
-				{...{ fill, stroke, fillOpacity, strokeOpacity }}
+				fillOpacity={fillOpacity ?? 0.3}
+				{...{ fill, stroke, strokeOpacity }}
 			>
 				<animate
 					attributeName="r"

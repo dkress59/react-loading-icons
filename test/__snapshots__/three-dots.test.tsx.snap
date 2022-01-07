@@ -39,6 +39,7 @@ exports[`<ThreeDots /> component renders and matches snapshot 1`] = `
     cx="60"
     cy="15"
     fill="#fff"
+    fill-opacity="0.3"
     r="9"
   >
     <animate
