@@ -28,7 +28,9 @@ jobs:
 
             - name: Install Dependencies
               run: >-
-                  cd $WORKDIR && yarn
+                  cd $WORKDIR &&
+                  yarn &&
+                  yarn build
 
             - name: Build with linked Module
               run: >-
@@ -57,7 +59,9 @@ jobs:
 
             - name: Install Dependencies
               run: >-
-                  cd $WORKDIR && yarn
+                  cd $WORKDIR &&
+                  yarn &&
+                  yarn build
 
             - name: Build with linked Module
               run: >-
