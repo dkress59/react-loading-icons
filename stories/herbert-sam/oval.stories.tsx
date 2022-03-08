@@ -1,7 +1,5 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { IconProps, IconStroke, IconStrokeArgs } from '../util'
 import { Meta } from '@storybook/react'
-import { testProps } from './util'
 import Oval from '../../src/components/oval'
 import React from 'react'
 export default {

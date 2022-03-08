@@ -1,4 +1,4 @@
-import { ArgTypes } from '@storybook/react/types-6-0'
+import { ArgTypes } from '@storybook/react'
 import { SVGProps } from 'react'
 
 export type IconProps = JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>

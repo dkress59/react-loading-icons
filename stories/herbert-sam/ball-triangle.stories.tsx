@@ -1,7 +1,5 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { IconProps, IconStroke, IconStrokeArgs } from '../util'
 import { Meta } from '@storybook/react'
-import { testProps } from './util'
 import BallTriangle from '../../src/components/ball-triangle'
 import React from 'react'
 export default {
@@ -12,5 +10,5 @@ export default {
 
 const Template = (args: IconProps) => <BallTriangle {...args} />
 export const Demo = Template.bind({})
-//@ts-ignore
+
 Demo.args = IconStroke
