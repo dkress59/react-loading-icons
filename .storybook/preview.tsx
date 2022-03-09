@@ -1,6 +1,5 @@
 import React from 'react'
 import { Story } from '@storybook/react'
-import { withKnobs } from '@storybook/addon-knobs';
 
 const decorator = (Story: Story) => <div style={{
 	width: '100%',
