@@ -3976,7 +3976,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:17.0.39":
+"@types/react@npm:*":
   version: 17.0.39
   resolution: "@types/react@npm:17.0.39"
   dependencies:
@@ -3984,6 +3984,17 @@ __metadata:
     "@types/scheduler": "*"
     csstype: ^3.0.2
   checksum: bf04d3c2894559012710d595553e12b422d3b91cd8f4f7e122d8cb044ba9c2ba17f6e8a4e09581359cc5509ddc59cd8c8fabd6774f3505a40a45393f074d6e6e
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:17.0.40":
+  version: 17.0.40
+  resolution: "@types/react@npm:17.0.40"
+  dependencies:
+    "@types/prop-types": "*"
+    "@types/scheduler": "*"
+    csstype: ^3.0.2
+  checksum: 24d1b210b5bf3c7d49f9a7fe5490db02e005a1d989045a2d67528347557dd0bcb0d7bcf96088152697e97521ac4c9506d1357ee48a2b7d4e701c70d838dc7284
   languageName: node
   linkType: hard
 
@@ -7839,12 +7850,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-sonarjs@npm:0.11.0":
-  version: 0.11.0
-  resolution: "eslint-plugin-sonarjs@npm:0.11.0"
+"eslint-plugin-sonarjs@npm:0.12.0":
+  version: 0.12.0
+  resolution: "eslint-plugin-sonarjs@npm:0.12.0"
   peerDependencies:
     eslint: ^5.0.0 || ^6.0.0 || ^7.0.0|| ^8.0.0
-  checksum: ef9633e518f6d8365b7370bf48f70fb837124c68318e14146c13ffa8f4c5a747b5f776956124549f81252131ebb8c139d071b9c66e2af77889d0eada725d6d25
+  checksum: 96be3002ce2344a07081c33649d9bb927189153c2e68ecb13069b0adfa4ff2e2cecec6f25ee3d5e29600d8d8aac6e14e54f1990b0847234975f311d48521c828
   languageName: node
   linkType: hard
 
@@ -13850,7 +13861,7 @@ __metadata:
     "@storybook/theming": 6.4.19
     "@testing-library/react": 12.1.4
     "@types/jest": 27.4.1
-    "@types/react": 17.0.39
+    "@types/react": 17.0.40
     "@types/react-dom": 17.0.13
     "@types/react-test-renderer": 17.0.1
     "@typescript-eslint/eslint-plugin": 5.14.0
@@ -13867,7 +13878,7 @@ __metadata:
     eslint-plugin-jam3: 0.2.3
     eslint-plugin-jest: 26.1.1
     eslint-plugin-prettier: 4.0.0
-    eslint-plugin-sonarjs: 0.11.0
+    eslint-plugin-sonarjs: 0.12.0
     eslint-plugin-sort-imports-es6-autofix: 0.6.0
     eslint-plugin-storybook: 0.5.7
     eslint-plugin-unused-imports: 2.0.0
