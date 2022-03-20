@@ -1,7 +1,8 @@
 import { render, screen } from '@testing-library/react'
-import { testProps } from './util'
-import Hearts from '../src/components/hearts'
 import React from 'react'
+
+import Hearts from '../src/components/hearts'
+import { testProps } from './util'
 
 describe('<Hearts /> component', () => {
 	it('renders and matches snapshot', () => {

@@ -1,7 +1,8 @@
 import { render, screen } from '@testing-library/react'
-import { testProps } from './util'
 import React from 'react'
+
 import Rings from '../src/components/rings'
+import { testProps } from './util'
 
 describe('<Rings /> component', () => {
 	it('renders and matches snapshot', () => {

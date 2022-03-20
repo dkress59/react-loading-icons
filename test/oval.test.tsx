@@ -1,7 +1,8 @@
 import { render, screen } from '@testing-library/react'
-import { testProps } from './util'
-import Oval from '../src/components/oval'
 import React from 'react'
+
+import Oval from '../src/components/oval'
+import { testProps } from './util'
 
 describe('<Oval /> component', () => {
 	it('renders and matches snapshot', () => {

@@ -1,7 +1,8 @@
 import { render, screen } from '@testing-library/react'
-import { testProps } from './util'
 import React from 'react'
+
 import ThreeDots from '../src/components/three-dots'
+import { testProps } from './util'
 
 describe('<ThreeDots /> component', () => {
 	it('renders and matches snapshot', () => {

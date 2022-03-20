@@ -1,7 +1,8 @@
 import { render, screen } from '@testing-library/react'
-import { testProps } from './util'
-import Circles from '../src/components/circles'
 import React from 'react'
+
+import Circles from '../src/components/circles'
+import { testProps } from './util'
 
 describe('<Circles /> component', () => {
 	it('renders and matches snapshot', () => {

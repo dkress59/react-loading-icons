@@ -1,7 +1,8 @@
 import { render, screen } from '@testing-library/react'
-import { testProps } from './util'
-import Audio from '../src/components/audio'
 import React from 'react'
+
+import Audio from '../src/components/audio'
+import { testProps } from './util'
 
 describe('<Audio /> component', () => {
 	it('renders and matches snapshot', () => {

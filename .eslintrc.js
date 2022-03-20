@@ -1,13 +1,18 @@
 module.exports = {
-	extends: [
-		'@sprylab/eslint-config/react',
-		'plugin:import/typescript',
-		'plugin:storybook/recommended',
-	],
+	root: true,
+	extends: ['@tool-belt/eslint-config', 'plugin:storybook/recommended'],
 	parserOptions: {
-		project: './tsconfig.eslint.json',
+		project: './tsconfig.json',
 	},
-	rules: {
-		'eslint-comments/disable-enable-pair': 'off',
+	plugins: ['jam3', 'jsx-a11y', 'unused-imports'],
+	settings: {
+		'import/parsers': {
+			'@typescript-eslint/parser': ['.ts', '.tsx'],
+		},
+		'import/resolver': {
+			typescript: {
+				alwaysTryTypes: true,
+			},
+		},
 	},
 }

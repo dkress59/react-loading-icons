@@ -1,7 +1,8 @@
 import { render, screen } from '@testing-library/react'
-import { testProps } from './util'
 import React from 'react'
+
 import SpinningCircles from '../src/components/spinning-circles'
+import { testProps } from './util'
 
 describe('<SpinningCircles /> component', () => {
 	it('renders and matches snapshot', () => {

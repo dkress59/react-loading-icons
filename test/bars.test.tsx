@@ -1,7 +1,8 @@
 import { render, screen } from '@testing-library/react'
-import { testProps } from './util'
-import Bars from '../src/components/bars'
 import React from 'react'
+
+import Bars from '../src/components/bars'
+import { testProps } from './util'
 
 describe('<Bars /> component', () => {
 	it('renders and matches snapshot', () => {

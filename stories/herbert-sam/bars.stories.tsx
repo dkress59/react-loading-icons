@@ -1,7 +1,10 @@
-import { IconFill, IconFillArgs, IconProps } from '../util'
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { Meta } from '@storybook/react'
-import Bars from '../../src/components/bars'
 import React from 'react'
+
+import Bars from '../../src/components/bars'
+import { IconFill, IconFillArgs, IconProps } from '../util'
+
 export default {
 	title: 'Sam Herbert/Bars',
 	component: Bars,
@@ -11,4 +14,5 @@ export default {
 const Template = (args: IconProps) => <Bars {...args} />
 export const Demo = Template.bind({})
 
+// @ts-ignore
 Demo.args = IconFill

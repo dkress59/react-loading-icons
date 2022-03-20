@@ -1,7 +1,9 @@
-import { IconFill, IconFillArgs, IconProps } from '../util'
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { Meta } from '@storybook/react'
 import React from 'react'
+
 import ThreeDots from '../../src/components/three-dots'
+import { IconFill, IconFillArgs, IconProps } from '../util'
 
 export default {
 	title: 'Sam Herbert/Three Dots',
@@ -12,4 +14,5 @@ export default {
 const Template = (args: IconProps) => <ThreeDots {...args} />
 export const Demo = Template.bind({})
 
+// @ts-ignore
 Demo.args = { ...IconFill, height: '1em', style: { margin: '2em' } }

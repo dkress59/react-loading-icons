@@ -1,7 +1,9 @@
 import { render, screen } from '@testing-library/react'
-import { testProps } from './util'
-import BallTriangle from '../src/components/ball-triangle'
 import React from 'react'
+
+import BallTriangle from '../src/components/ball-triangle'
+import { testProps } from './util'
+
 describe('<BallTriangle /> component', () => {
 	it('renders and matches snapshot', () => {
 		render(<BallTriangle data-testid="icon" />)

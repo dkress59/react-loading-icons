@@ -1,7 +1,8 @@
 import { render, screen } from '@testing-library/react'
-import { testProps } from './util'
-import Puff from '../src/components/puff'
 import React from 'react'
+
+import Puff from '../src/components/puff'
+import { testProps } from './util'
 
 describe('<Puff /> component', () => {
 	it('renders and matches snapshot', () => {

@@ -1,7 +1,8 @@
 import { render, screen } from '@testing-library/react'
-import { testProps } from './util'
-import Grid from '../src/components/grid'
 import React from 'react'
+
+import Grid from '../src/components/grid'
+import { testProps } from './util'
 
 describe('<Grid /> component', () => {
 	it('renders and matches snapshot', () => {

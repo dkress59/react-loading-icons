@@ -1,7 +1,10 @@
-import { IconFill, IconFillArgs, IconProps } from '../util'
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { Meta } from '@storybook/react'
-import Audio from '../../src/components/audio'
 import React from 'react'
+
+import Audio from '../../src/components/audio'
+import { IconFill, IconFillArgs, IconProps } from '../util'
+
 export default {
 	title: 'Sam Herbert/Audio',
 	component: Audio,
@@ -11,4 +14,5 @@ export default {
 const Template = (args: IconProps) => <Audio {...args} />
 export const Demo = Template.bind({})
 
+// @ts-ignore
 Demo.args = IconFill

@@ -1,7 +1,8 @@
 import { render, screen } from '@testing-library/react'
-import { testProps } from './util'
 import React from 'react'
+
 import TailSpin from '../src/components/tail-spin'
+import { testProps } from './util'
 
 describe('<TailSpin /> component', () => {
 	it('renders and matches snapshot', () => {
