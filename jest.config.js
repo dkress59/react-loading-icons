@@ -1,5 +1,5 @@
 module.exports = {
-	collectCoverageFrom: ['src/**/*.(js|jsx|ts|tsx)'],
+	collectCoverageFrom: ['src/components/**/*.(js|jsx|ts|tsx)'],
 	moduleFileExtensions: ['ts', 'tsx', 'js', 'json', 'node'],
 	transform: {
 		'^.+\\.tsx?$': 'ts-jest',

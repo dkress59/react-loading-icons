@@ -1,4 +1,3 @@
-/* istanbul ignore file */
 import AudioIcon from './components/audio'
 import BallTriangleIcon from './components/ball-triangle'
 import BarsIcon from './components/bars'
