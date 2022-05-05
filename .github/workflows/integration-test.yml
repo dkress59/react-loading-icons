@@ -11,7 +11,6 @@ jobs:
         runs-on: ubuntu-latest
         env:
             APP: 'loading-icons-tester-js'
-            CLIENT: 'react-loading-icons'
             WORKDIR: '/home/runner/work/react-loading-icons/react-loading-icons'
 
         steps:
@@ -23,20 +22,20 @@ jobs:
 
             - name: Create React App
               run: >-
-                  npx create-react-app ${{env.APP}} &&
-                  cd ${{env.APP}} &&
+                  npx create-react-app $APP &&
+                  cd $APP &&
                   npm install react-loading-icons
 
-            - name: Build latest client
+            - name: Build latest icons
               run: >-
                   cd $WORKDIR &&
                   npm install &&
                   npm run build &&
                   npm link
 
-            - name: Build with latest client
+            - name: Build with latest icons
               run: >-
-                  cd ${{env.APP}} &&
+                  cd $APP &&
                   npm link react-loading-icons &&
                   npm install &&
                   npm run build
@@ -45,7 +44,6 @@ jobs:
         runs-on: ubuntu-latest
         env:
             APP: 'loading-icons-tester-ts'
-            CLIENT: 'react-loading-icons'
             WORKDIR: '/home/runner/work/react-loading-icons/react-loading-icons'
 
         steps:
@@ -57,19 +55,19 @@ jobs:
 
             - name: Create React App
               run: >-
-                  npx create-react-app ${{env.APP}} --template typescript &&
-                  cd ${{env.APP}} &&
+                  npx create-react-app $APP --template typescript &&
+                  cd $APP &&
                   npm install react-loading-icons
 
-            - name: Build latest client
+            - name: Build latest icons
               run: >-
                   cd $WORKDIR &&
                   npm install &&
                   npm run build
 
-            - name: Build app with latest client
+            - name: Build app with latest icons
               run: >-
-                  cd ${{env.APP}} &&
+                  cd $APP &&
                   npm link react-loading-icons &&
                   npm install &&
                   npm run build

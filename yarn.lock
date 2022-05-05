@@ -14065,9 +14065,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "react-loading-icons@workspace:."
   dependencies:
-    "@storybook/addon-controls": 6.4.22
     "@storybook/addon-essentials": 6.4.22
-    "@storybook/addons": 6.4.22
     "@storybook/builder-webpack5": 6.4.22
     "@storybook/cli": 6.4.22
     "@storybook/manager-webpack5": 6.4.22
