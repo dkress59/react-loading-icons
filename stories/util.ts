@@ -9,7 +9,7 @@ export const IconFill: IconProps = {
 	speed: 1,
 	stroke: 'transparent',
 	strokeOpacity: 1,
-	width: undefined,
+	width: 'auto',
 }
 export const IconStroke: IconProps = {
 	fill: 'transparent',
@@ -19,7 +19,7 @@ export const IconStroke: IconProps = {
 	stroke: '#06bcee',
 	strokeOpacity: 1,
 	strokeWidth: 2,
-	width: undefined,
+	width: 'auto',
 }
 export const IconStrokeFill: IconProps = {
 	fill: '#06bcee',
@@ -29,7 +29,7 @@ export const IconStrokeFill: IconProps = {
 	stroke: '#06bcee',
 	strokeOpacity: 1,
 	strokeWidth: 2,
-	width: undefined,
+	width: 'auto',
 }
 
 export const IconFillArgs: ArgTypes = {
@@ -41,7 +41,7 @@ export const IconFillArgs: ArgTypes = {
 	width: {
 		name: 'Width',
 		control: 'text',
-		defaultValue: '',
+		defaultValue: 'auto',
 	},
 	fill: {
 		name: 'Fill',
@@ -68,7 +68,7 @@ export const IconStrokeArgs: ArgTypes = {
 	width: {
 		name: 'Width',
 		control: 'text',
-		defaultValue: '',
+		defaultValue: 'auto',
 	},
 	fill: {
 		name: 'Fill',
@@ -95,7 +95,7 @@ export const IconStrokeFillArgs: ArgTypes = {
 	width: {
 		name: 'Width',
 		control: 'text',
-		defaultValue: '',
+		defaultValue: 'auto',
 	},
 	fill: {
 		name: 'Fill',
