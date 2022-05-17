@@ -22,10 +22,8 @@ jobs:
 
             - name: Create React App
               run: >-
-                  npx create-react-app $APP &&
+                  yarn create react-app $APP &&
                   cd $APP &&
-                  rm package-lock.json &&
-                  yarn &&
                   yarn add react-loading-icons
 
             - name: Build latest icons
@@ -55,20 +53,15 @@ jobs:
                   node-version: '16'
                   check-latest: true
 
-            - name: Create React App
-              run: >-
-                  npx create-react-app $APP --template typescript &&
-                  cd $APP &&
-                  rm package-lock.json &&
-                  yarn &&
-                  yarn add react-loading-icons
-
             - name: Build latest icons
               run: >-
-                  cd $WORKDIR &&
                   yarn &&
                   yarn build &&
                   yarn link
+
+            - name: Create React App
+              run: >-
+                  yarn create react-app $APP --template typescript
 
             - name: Build app with latest icons
               run: >-
