@@ -10,7 +10,7 @@ A pure SVG zero-dependency React adaptation of Sam Herbert's [SVG Loaders](https
 **Built with React 17 and TypeScript.**
 Check out the [Demo](https://loading.damiankress.de)!
 
-Also works with JavaScript, of course.
+Also works with JavaScript, of course (supports ESM tree shaking).
 
 ## Usage
 

@@ -1,13 +1,14 @@
 {
   "name": "react-loading-icons",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "React implementation of the SVG Loaders library by Sam Herbert",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dkress59/react-loading-icons.git"
   },
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
   "peerDependendies": {
     "react": "^16.0.0 | ^17.0.0 | ^18.0.0",
     "react-dom": "^16.0.0 | ^17.0.0 | ^18.0.0",
@@ -65,7 +66,9 @@
     "webpack": "5.72.1"
   },
   "scripts": {
-    "build": "tsc --project tsconfig.build.json",
+    "build": "yarn build:cjs && yarn build:esm",
+    "build:cjs": "tsc --project tsconfig.build.cjs.json",
+    "build:esm": "tsc --project tsconfig.build.esm.json",
     "cache:clean": "rm -rf node_modules/.cache",
     "check:script": "eslint --fix-dry-run './{src,stories,test}/**/*.{js,ts,tsx}'",
     "coverage": "jest --coverage",
@@ -80,12 +83,28 @@
     "icons",
     "loader",
     "loaders",
+    "loading-animation",
+    "loading-animations",
+    "loading-spinner",
+    "loading-spinners",
     "loading",
+    "react-library",
+    "react-loader",
+    "react-loading-animation",
+    "react-loading",
+    "react-svg",
     "react",
     "spinner",
     "spinners",
+    "svg-animations",
+    "svg-icons",
+    "svg-loaders",
+    "svg-loading",
     "svg",
-    "svgloaders"
+    "typescript-library",
+    "typescript-react-components",
+    "typescript-react",
+    "typescript"
   ],
   "author": "Damian Kress",
   "license": "MIT",

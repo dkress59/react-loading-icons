@@ -1,17 +1,14 @@
 {
 	"compilerOptions": {
 		"baseUrl": ".",
-		"declaration": true,
 		"esModuleInterop": true,
 		"jsx": "react",
 		"lib": [
 			"es5",
 			"DOM"
 		],
-		"module": "commonjs",
 		"moduleResolution": "node",
 		"noImplicitAny": false,
-		"outDir": "./dist/",
 		"strict": true,
 		"target": "es5"
 	},
