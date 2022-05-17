@@ -24,21 +24,21 @@ jobs:
               run: >-
                   npx create-react-app $APP &&
                   cd $APP &&
-                  npm install react-loading-icons
+                  yarn add react-loading-icons
 
             - name: Build latest icons
               run: >-
                   cd $WORKDIR &&
-                  npm install --force &&
-                  npm run build &&
-                  npm link
+                  yarn &&
+                  yarn build &&
+                  yarn link link
 
             - name: Build with latest icons
               run: >-
                   cd $APP &&
-                  npm link react-loading-icons &&
-                  npm install &&
-                  npm run build
+                  yarn link $WORKDIR &&
+                  yarn &&
+                  yarn build
 
     TypeScript:
         runs-on: ubuntu-latest
@@ -57,17 +57,18 @@ jobs:
               run: >-
                   npx create-react-app $APP --template typescript &&
                   cd $APP &&
-                  npm install react-loading-icons
+                  yarn add react-loading-icons
 
             - name: Build latest icons
               run: >-
                   cd $WORKDIR &&
-                  npm install --force &&
-                  npm run build
+                  yarn &&
+                  yarn build &&
+                  yarn link
 
             - name: Build app with latest icons
               run: >-
                   cd $APP &&
-                  npm link react-loading-icons &&
-                  npm install &&
-                  npm run build
+                  yarn link $WORKDIR &&
+                  yarn &&
+                  yarn build
