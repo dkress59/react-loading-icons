@@ -20,22 +20,25 @@ jobs:
                   node-version: '16'
                   check-latest: true
 
+            - name: Create React App
+              run: >-
+                  npx create-react-app $APP &&
+                  cd $APP &&
+                  npm install react-loading-icons
+
             - name: Build latest icons
               run: >-
                   cd $WORKDIR &&
-                  yarn install &&
-                  yarn build
-
-            - name: Create-React-App
-              run: >-
-                  yarn create react-app $APP
+                  npm install &&
+                  npm run build &&
+                  npm link
 
             - name: Build with latest icons
               run: >-
                   cd $APP &&
-                  yarn link $WORKDIR &&
-                  yarn install &&
-                  yarn build
+                  npm link react-loading-icons &&
+                  npm install &&
+                  npm run build
 
     TypeScript:
         runs-on: ubuntu-latest
@@ -50,18 +53,22 @@ jobs:
                   node-version: '16'
                   check-latest: true
 
+            - name: Create React App
+              run: >-
+                  npx create-react-app $APP --template typescript &&
+                  cd $APP &&
+                  npm install react-loading-icons
+
             - name: Build latest icons
               run: >-
-                  yarn install &&
-                  yarn build
-
-            - name: Create-React-App
-              run: >-
-                  yarn create react-app $APP --template typescript
+                  cd $WORKDIR &&
+                  npm install &&
+                  npm run build &&
+                  npm link
 
             - name: Build app with latest icons
               run: >-
                   cd $APP &&
-                  yarn link $WORKDIR &&
-                  yarn install &&
-                  yarn build
+                  npm link react-loading-icons &&
+                  npm install &&
+                  npm run build

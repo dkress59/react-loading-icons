@@ -55,6 +55,7 @@
     "identity-obj-proxy": "3.0.0",
     "jest": "28.1.0",
     "jest-environment-jsdom": "28.1.0",
+    "npm-run-all": "4.1.5",
     "package": "1.0.1",
     "prettier": "2.6.2",
     "react": "18.1.0",
@@ -66,7 +67,7 @@
     "webpack": "5.72.1"
   },
   "scripts": {
-    "build": "yarn build:cjs && yarn build:esm",
+    "build": "npm-run-all --parallel build:cjs build:esm",
     "build:cjs": "tsc --project tsconfig.build.cjs.json",
     "build:esm": "tsc --project tsconfig.build.esm.json",
     "cache:clean": "rm -rf node_modules/.cache",
