@@ -29,7 +29,7 @@ jobs:
             - name: Build latest icons
               run: >-
                   cd $WORKDIR &&
-                  npm install &&
+                  npm install --force &&
                   npm run build &&
                   npm link
 
@@ -62,7 +62,7 @@ jobs:
             - name: Build latest icons
               run: >-
                   cd $WORKDIR &&
-                  npm install &&
+                  npm install --force &&
                   npm run build &&
                   npm link
 
