@@ -20,21 +20,21 @@ jobs:
                   node-version: '16'
                   check-latest: true
 
-            - name: Create-React-App
-              run: >-
-                  yarn create react-app $APP
-
             - name: Build latest icons
               run: >-
                   cd $WORKDIR &&
-                  yarn &&
+                  yarn install &&
                   yarn build
+
+            - name: Create-React-App
+              run: >-
+                  yarn create react-app $APP
 
             - name: Build with latest icons
               run: >-
                   cd $APP &&
                   yarn link $WORKDIR &&
-                  yarn &&
+                  yarn install &&
                   yarn build
 
     TypeScript:
@@ -52,7 +52,7 @@ jobs:
 
             - name: Build latest icons
               run: >-
-                  yarn &&
+                  yarn install &&
                   yarn build
 
             - name: Create-React-App
@@ -63,5 +63,5 @@ jobs:
               run: >-
                   cd $APP &&
                   yarn link $WORKDIR &&
-                  yarn &&
+                  yarn install &&
                   yarn build
